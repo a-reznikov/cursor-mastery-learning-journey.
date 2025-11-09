@@ -1,0 +1,171 @@
+{
+  "// ============================================": "",
+  "// Team Code Snippets Template": "",
+  "// ============================================": "",
+  "// Location: .vscode/snippets.code-snippets in your project": "",
+  "// Customize these for your tech stack and patterns": "",
+
+  "React Functional Component": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "rfc",
+    "body": [
+      "import type { FC } from 'react';",
+      "",
+      "interface ${1:ComponentName}Props {",
+      "  $2",
+      "}",
+      "",
+      "export const ${1:ComponentName}: FC<${1:ComponentName}Props> = ({ $3 }) => {",
+      "  return (",
+      "    <div>",
+      "      $0",
+      "    </div>",
+      "  );",
+      "};",
+      ""
+    ],
+    "description": "Create a React functional component with TypeScript"
+  },
+
+  "Custom React Hook": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "hook",
+    "body": [
+      "import { useState, useEffect } from 'react';",
+      "",
+      "export function use${1:HookName}($2) {",
+      "  const [${3:state}, set${3/(.*)/${1:/capitalize}/}] = useState$4();",
+      "",
+      "  useEffect(() => {",
+      "    $0",
+      "  }, []);",
+      "",
+      "  return { ${3:state}, set${3/(.*)/${1:/capitalize}/} };",
+      "}",
+      ""
+    ],
+    "description": "Create a custom React hook"
+  },
+
+  "Vitest Test Suite": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "test",
+    "body": [
+      "import { describe, it, expect } from 'vitest';",
+      "import { $1 } from './$2';",
+      "",
+      "describe('$1', () => {",
+      "  it('should $3', () => {",
+      "    $0",
+      "  });",
+      "});",
+      ""
+    ],
+    "description": "Create a Vitest test suite"
+  },
+
+  "API Route Handler": {
+    "scope": "typescript",
+    "prefix": "api",
+    "body": [
+      "import type { Request, Response } from 'express';",
+      "import { z } from 'zod';",
+      "",
+      "const ${1:Name}Schema = z.object({",
+      "  $2",
+      "});",
+      "",
+      "export async function ${3:handler}(req: Request, res: Response) {",
+      "  try {",
+      "    const data = ${1:Name}Schema.parse(req.body);",
+      "    $0",
+      "    res.status(200).json({ data });",
+      "  } catch (error) {",
+      "    if (error instanceof z.ZodError) {",
+      "      return res.status(400).json({ error: 'Invalid input', details: error.errors });",
+      "    }",
+      "    res.status(500).json({ error: 'Internal server error' });",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "Create an API route handler with validation"
+  },
+
+  "Try-Catch Block": {
+    "scope": "typescript,typescriptreact,javascript",
+    "prefix": "tryc",
+    "body": [
+      "try {",
+      "  $1",
+      "} catch (error) {",
+      "  console.error('$2', error);",
+      "  $0",
+      "}",
+      ""
+    ],
+    "description": "Try-catch block with logging"
+  },
+
+  "Async Function": {
+    "scope": "typescript,javascript",
+    "prefix": "afn",
+    "body": [
+      "async function ${1:functionName}($2): Promise<$3> {",
+      "  $0",
+      "}",
+      ""
+    ],
+    "description": "Async function with TypeScript types"
+  },
+
+  "Console Log": {
+    "scope": "typescript,javascript,typescriptreact",
+    "prefix": "cl",
+    "body": ["console.log('$1', $2);$0"],
+    "description": "Console log with label"
+  },
+
+  "Todo Comment": {
+    "scope": "typescript,javascript,typescriptreact,python,go,rust",
+    "prefix": "todo",
+    "body": ["// TODO: $0"],
+    "description": "TODO comment"
+  },
+
+  "Fixme Comment": {
+    "scope": "typescript,javascript,typescriptreact,python,go,rust",
+    "prefix": "fixme",
+    "body": ["// FIXME: $0"],
+    "description": "FIXME comment"
+  },
+
+  "JSDoc Function": {
+    "scope": "typescript,javascript",
+    "prefix": "jsdoc",
+    "body": [
+      "/**",
+      " * $1",
+      " * ",
+      " * @param {$2} $3 - $4",
+      " * @returns {$5} $6",
+      " * ",
+      " * @example",
+      " * $7",
+      " */",
+      "$0"
+    ],
+    "description": "JSDoc comment for function"
+  },
+
+  "// ============================================": "",
+  "// ADD YOUR TEAM-SPECIFIC SNIPPETS BELOW": "",
+  "// ============================================": "",
+
+  "Example Custom Snippet": {
+    "scope": "typescript",
+    "prefix": "example",
+    "body": ["// Your team-specific pattern here", "$0"],
+    "description": "Example - customize for your needs"
+  }
+}

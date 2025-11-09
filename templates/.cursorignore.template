@@ -1,0 +1,212 @@
+# ================================
+# .cursorignore Template
+# ================================
+# This file tells Cursor which files to ignore for:
+# - Indexing
+# - Search
+# - Context inclusion
+# Similar to .gitignore syntax
+
+# ================================
+# SECURITY - SENSITIVE DATA
+# ================================
+
+# Environment files
+.env
+.env.*
+*.env
+.env.local
+.env.development
+.env.staging
+.env.production
+.env.test
+
+# Secrets and keys
+*.key
+*.pem
+*.p12
+*.cer
+*.crt
+secrets/
+.secrets
+credentials.json
+service-account*.json
+serviceAccountKey.json
+*-key.json
+*.keystore
+
+# AWS credentials
+.aws/
+aws-config.json
+credentials
+
+# SSH keys
+.ssh/
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+
+# API keys and tokens
+.api-keys
+api-keys.json
+tokens.json
+
+# ================================
+# CONFIGURATION WITH SECRETS
+# ================================
+
+# Application configs (often contain secrets)
+config/production.yml
+config/secrets.yml
+config/database.yml
+appsettings.Production.json
+
+# Docker with secrets
+docker-compose.override.yml
+.dockerenv
+
+# Kubernetes secrets
+*secret*.yaml
+*secret*.yml
+
+# ================================
+# LOGS (may contain sensitive data)
+# ================================
+
+*.log
+*.log.*
+logs/
+log/
+*.logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ================================
+# DATABASES
+# ================================
+
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+database.sql
+dump.sql
+*.dump
+
+# ================================
+# DEPENDENCIES (also performance)
+# ================================
+
+# Node.js
+node_modules/
+.pnp
+.pnp.js
+bower_components/
+
+# Python
+venv/
+env/
+ENV/
+__pycache__/
+*.pyc
+.Python
+*.egg-info/
+dist/
+.eggs/
+
+# Ruby
+.bundle/
+vendor/bundle/
+
+# Go
+vendor/
+
+# Rust
+target/
+
+# ================================
+# BUILD ARTIFACTS
+# ================================
+
+dist/
+build/
+.next/
+out/
+.nuxt/
+.cache/
+.parcel-cache/
+.vscode-test/
+coverage/
+*.min.js
+*.bundle.js
+*.chunk.js
+.turbo/
+
+# ================================
+# IDE & SYSTEM
+# ================================
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# ================================
+# TESTING DATA
+# ================================
+
+# Test fixtures with real data (customize for your project)
+# tests/fixtures/production-data/
+# e2e/screenshots/
+# e2e/videos/
+
+# ================================
+# BACKUPS
+# ================================
+
+*.backup
+*.bak
+*.old
+*.orig
+*.dump
+backup/
+backups/
+
+# ================================
+# DOCUMENTATION WITH CREDENTIALS
+# ================================
+
+# API collections that might have tokens
+postman_collection.json
+insomnia_export.json
+.http
+*.http
+
+# ================================
+# TEMPORARY FILES
+# ================================
+
+tmp/
+temp/
+*.tmp
+*.temp
+
+# ================================
+# PROJECT-SPECIFIC (CUSTOMIZE)
+# ================================
+
+# Add your project-specific patterns here
+# Example:
+# scripts/production/
+# data/real-customer-data/
+

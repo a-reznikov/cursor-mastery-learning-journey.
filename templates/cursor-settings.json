@@ -1,0 +1,142 @@
+{
+  "// ============================================": "",
+  "// Cursor AI Settings Template": "",
+  "// ============================================": "",
+  "// Customize and share with your team": "",
+  "// Copy to: Cursor → Settings → Open Settings (JSON)": "",
+
+  "// ============================================": "",
+  "// MODEL SELECTION": "",
+  "// ============================================": "",
+
+  "cursor.chat.model": "claude-sonnet-4.5",
+  "// Options: claude-sonnet-4.5, claude-opus-4, gpt-4o": "",
+
+  "cursor.cmdk.model": "claude-sonnet-4.5",
+  "// Model for Cmd+K inline editing": "",
+
+  "cursor.composer.model": "claude-sonnet-4.5",
+  "// Model for Composer (multi-file editing)": "",
+
+  "cursor.autocomplete.model": "cursor-small",
+  "// Use fast model for autocomplete": "",
+
+  "// ============================================": "",
+  "// PRIVACY & SECURITY": "",
+  "// ============================================": "",
+
+  "cursor.privacyMode": true,
+  "// Enable for sensitive projects": "",
+
+  "cursor.telemetry.enabled": false,
+  "// Disable telemetry for privacy": "",
+
+  "cursor.telemetry.crashReporting": false,
+  "// Disable crash reporting": "",
+
+  "// ============================================": "",
+  "// EDITOR SETTINGS": "",
+  "// ============================================": "",
+
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true
+  },
+
+  "editor.suggestSelection": "first",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+
+  "// ============================================": "",
+  "// FILE EXCLUSIONS": "",
+  "// ============================================": "",
+
+  "files.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.cache": true,
+    "**/.turbo": true,
+    "**/coverage": true
+  },
+
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.next": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/coverage": true,
+    "**/*.min.js": true,
+    "**/*.bundle.js": true
+  },
+
+  "// ============================================": "",
+  "// TERMINAL": "",
+  "// ============================================": "",
+
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+
+  "// ============================================": "",
+  "// GIT": "",
+  "// ============================================": "",
+
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+
+  "// ============================================": "",
+  "// LANGUAGE-SPECIFIC": "",
+  "// ============================================": "",
+
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[markdown]": {
+    "editor.formatOnSave": false,
+    "editor.wordWrap": "on"
+  },
+
+  "// ============================================": "",
+  "// PERFORMANCE": "",
+  "// ============================================": "",
+
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/.hg/store/**": true,
+    "**/dist/**": true,
+    "**/build/**": true
+  },
+
+  "// ============================================": "",
+  "// CUSTOMIZE BELOW FOR YOUR TEAM": "",
+  "// ============================================": ""
+}
