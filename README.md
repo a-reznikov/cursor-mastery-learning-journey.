@@ -90,7 +90,7 @@ cursor-learning/
 ---
 
 
-## 📊 Progress Tracker
+## ✅ Progress Tracker
 
 ✅ = Completed | 🟡 = In Progress | ⬜ = Not Started
 
