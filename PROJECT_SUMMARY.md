@@ -167,33 +167,33 @@ All with complete structure, ready for your notes:
 
 ## 🎯 Learning Path
 
-### Phase 1: Foundations (Days 1-2)
+### Phase 1: Foundations
 **Files:** 3 complete learning docs ✅  
 **Topics:** Models, Plans, Settings  
 **Outcome:** Understand Cursor capabilities and configure optimally
 
-### Phase 2: Core Features (Days 3-4)
+### Phase 2: Core Features
 **Files:** 4 complete learning docs ✅  
 **Topics:** Chat, Cmd+K, Composer, Codebase  
 **Outcome:** Master core Cursor interfaces
 
-### Phase 3: Advanced Features (Days 5-6)
+### Phase 3: Advanced Features
 **Files:** 3 complete learning docs ✅  
 **Topics:** Browser tools, Testing, Terminal  
 **Outcome:** Leverage advanced capabilities
 
-### Phase 4: Security & Privacy 🔒 (Days 7-8)
+### Phase 4: Security & Privacy 🔒
 **Files:** 7 complete learning docs ✅  
 **Topics:** Data flow, .cursorignore, Secrets, Security  
 **Outcome:** Ensure safe team usage  
 **⚠️ CRITICAL PHASE**
 
-### Phase 5: Team Collaboration (Days 9-10)
+### Phase 5: Team Collaboration
 **Files:** 3 complete learning docs ✅  
 **Topics:** .cursorrules, Snippets, CI/CD  
 **Outcome:** Scale to team usage
 
-### Phase 6: Team Rollout (Days 11-12)
+### Phase 6: Team Rollout
 **Files:** 3 complete learning docs ✅  
 **Topics:** Documentation, Resources, Metrics  
 **Outcome:** Launch team adoption
@@ -229,9 +229,9 @@ As you progress, you'll create:
 ## ⏱️ Time Investment
 
 ### Total Time Estimate
-**Intensive:** 48-72 hours over 12 days  
-**Balanced:** 60-90 hours over 3-4 weeks  
-**Gradual:** 48-60 hours over 6-8 weeks
+**Intensive:** 48-72 hours  
+**Balanced:** 60-90 hours  
+**Gradual:** 48-60 hours
 
 ### Per Phase
 - Phase 1: 6-8 hours
@@ -241,10 +241,10 @@ As you progress, you'll create:
 - Phase 5: 6-8 hours
 - Phase 6: 6-8 hours
 
-### Daily Commitment Options
-- **Intensive:** 4-6 hours/day
-- **Balanced:** 2-3 hours/day
-- **Gradual:** 1 hour/day
+### Commitment Pace Options
+- **Intensive:** 4-6 hours per session
+- **Balanced:** 2-3 hours per session
+- **Gradual:** 1 hour per session
 
 ---
 
@@ -255,12 +255,12 @@ As you progress, you'll create:
 2. ✅ Open [README.md](README.md) and fill in today's date
 3. ✅ Start [Phase 1, Step 1](docs/phase-1-foundations/01-models-architecture.md)
 
-### This Week
+### Short Term
 - Complete Phase 1 (3 steps)
-- Update progress tracker daily
+- Update progress tracker regularly
 - Take comprehensive notes
 
-### This Month
+### Full Program
 - Complete all 6 phases (23 steps)
 - Build all deliverables
 - Ready for team pilot
@@ -325,7 +325,7 @@ As you progress, you'll create:
 - Keep deliverables updated
 - Incorporate team feedback
 - Add new discoveries
-- Review quarterly
+- Review and update regularly
 
 ---
 
@@ -334,7 +334,7 @@ As you progress, you'll create:
 1. **Don't skip ahead** - Each phase builds on previous
 2. **Take real notes** - Your learnings are valuable
 3. **Use real projects** - More valuable than toy examples
-4. **Update daily** - Don't let it pile up
+4. **Update regularly** - Don't let it pile up
 5. **Focus on security** - Phase 4 is critical
 6. **Build progressively** - Deliverables compound
 7. **Share early** - Get feedback on deliverables
