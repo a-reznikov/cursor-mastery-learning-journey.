@@ -62,12 +62,12 @@ When completed in Step 21, this guide will contain:
 
 ## Placeholder Content
 
-*This file will be populated during Step 21 of your learning journey.*
+*This file will be populated during Step 6.1 of your learning journey.*
 
 *In the meantime, refer to:*
 - *Your notes from all 23 steps*
 - *[Learning Plan](../LEARNING_PLAN.md) for comprehensive content*
-- *[Phase 6, Step 21](../docs/phase-6-team-rollout/21-team-documentation.md)*
+- *[Phase 6, Step 6.1](../docs/phase-6-team-rollout/01-team-documentation.md)*
 
 ---
 

@@ -329,7 +329,7 @@ secrets/
 
 ### Internal Resources
 - [.cursorignore template](../../templates/.cursorignore.template)
-- [Step 12: .cursorignore Guide](../phase-4-security-privacy/12-cursorignore-guide.md)
+- [Step 4.2: .cursorignore Guide](../phase-4-security-privacy/02-cursorignore-guide.md)
 
 ---
 

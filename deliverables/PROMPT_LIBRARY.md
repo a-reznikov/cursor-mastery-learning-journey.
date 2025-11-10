@@ -103,7 +103,7 @@ When completed in Step 22, this library will contain:
 *As you progress through learning, save prompts that work well!*
 
 *In the meantime, refer to:*
-- *[Phase 6, Step 22](../docs/phase-6-team-rollout/22-resources-package.md)*
+- *[Phase 6, Step 6.2](../docs/phase-6-team-rollout/02-resources-package.md)*
 - *Your daily learning notes for successful prompts*
 
 ---

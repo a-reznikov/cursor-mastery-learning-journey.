@@ -231,9 +231,9 @@ Customize based on:
 
 ## 📚 Resources
 
-- [Step 12: .cursorignore Guide](../docs/phase-4-security-privacy/12-cursorignore-guide.md)
-- [Step 18: .cursorrules Guide](../docs/phase-5-team-collaboration/18-cursorrules-guide.md)
-- [Step 19: Snippets Guide](../docs/phase-5-team-collaboration/19-snippets-templates.md)
+- [Step 4.2: .cursorignore Guide](../docs/phase-4-security-privacy/02-cursorignore-guide.md)
+- [Step 5.1: .cursorrules Guide](../docs/phase-5-team-collaboration/01-cursorrules-guide.md)
+- [Step 5.2: Snippets Guide](../docs/phase-5-team-collaboration/02-snippets-templates.md)
 - [Cursor Documentation](https://cursor.sh/docs)
 
 ---

@@ -63,7 +63,7 @@ When completed in Step 21, this guide will contain:
 
 *In the meantime, refer to:*
 - *[Learning Plan](../LEARNING_PLAN.md) for full content*
-- *[Phase 6, Step 21](../docs/phase-6-team-rollout/21-team-documentation.md) for creation guide*
+- *[Phase 6, Step 6.1](../docs/phase-6-team-rollout/01-team-documentation.md) for creation guide*
 
 ---
 

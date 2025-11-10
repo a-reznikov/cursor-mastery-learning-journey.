@@ -265,7 +265,7 @@ Key rules:
 ## 🔗 Resources
 
 - [.cursorrules Template](../../templates/.cursorrules.template.md)
-- [Step 15: Security Section](../phase-4-security-privacy/15-cursorrules-security.md)
+- [Step 4.5: Security Section](../phase-4-security-privacy/05-cursorrules-security.md)
 
 ---
 

@@ -89,7 +89,7 @@ When completed in Step 16, this guide will contain:
 
 *In the meantime, refer to:*
 - *[Phase 4: Security & Privacy](../docs/phase-4-security-privacy/)*
-- *[Step 16](../docs/phase-4-security-privacy/16-security-guidelines.md)*
+- *[Step 4.6](../docs/phase-4-security-privacy/06-security-guidelines.md)*
 - *[Learning Plan](../LEARNING_PLAN.md)*
 
 ---
