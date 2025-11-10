@@ -38,7 +38,7 @@ Your learning environment includes:
 
 **Read these first:**
 1. [README.md](README.md) - Overview and progress tracker
-2. [LEARNING_PLAN.md](LEARNING_PLAN.md) - Complete 23-step plan
+2. [LEARNING_PLAN.md](LEARNING_PLAN.md) - Complete 24-step plan
 3. [docs/INDEX.md](docs/INDEX.md) - Documentation index
 
 ### Step 2: Set Up Your Environment (10 minutes)
