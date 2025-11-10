@@ -55,11 +55,11 @@ deliverables/CURSOR_SECURITY_GUIDELINES.md
 ```
 
 **Content Compilation:**
-- From Step 11: [Data flow info]
-- From Step 12: [.cursorignore patterns]
-- From Step 13: [Secrets management]
-- From Step 14: [Safe prompting]
-- From Step 15: [Security rules]
+- From Step 4.1: [Data flow info]
+- From Step 4.2: [.cursorignore patterns]
+- From Step 4.3: [Secrets management]
+- From Step 4.4: [Safe prompting]
+- From Step 4.5: [Security rules]
 
 **My Document Status:**
 - [ ] Draft created

@@ -316,7 +316,7 @@ coverage/
 
 ### Internal Resources
 - [.cursorignore Template](../../templates/.cursorignore.template)
-- [Step 11: Data Flow](11-data-flow-privacy.md)
+- [Step 4.1: Data Flow](01-data-flow-privacy.md)
 
 ---
 

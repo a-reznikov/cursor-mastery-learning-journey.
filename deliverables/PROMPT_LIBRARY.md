@@ -8,7 +8,7 @@
 
 ## What This Document Will Include
 
-When completed in Step 22, this library will contain:
+When completed in Step 6.2, this library will contain:
 
 ### 1. Component Development
 - Create React component prompts
@@ -64,7 +64,7 @@ When completed in Step 22, this library will contain:
 
 ## Instructions for Completing This Document
 
-**When you reach Step 22:**
+**When you reach Step 6.2:**
 
 1. Compile effective prompts discovered during learning
 2. Test each prompt for quality
@@ -98,7 +98,7 @@ When completed in Step 22, this library will contain:
 
 ## Placeholder Content
 
-*This file will be populated during Step 22 of your learning journey.*
+*This file will be populated during Step 6.2 of your learning journey.*
 
 *As you progress through learning, save prompts that work well!*
 

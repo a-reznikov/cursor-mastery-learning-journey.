@@ -8,7 +8,7 @@
 
 ## What This Document Will Include
 
-When completed in Step 21, this guide will contain:
+When completed in Step 6.1, this guide will contain:
 
 ### 1. Installation (5 minutes)
 - Download and install Cursor
@@ -42,7 +42,7 @@ When completed in Step 21, this guide will contain:
 
 ## Instructions for Completing This Document
 
-**When you reach Step 21:**
+**When you reach Step 6.1:**
 
 1. Use the comprehensive content from the full learning plan
 2. Condense to 15-minute quickstart format
@@ -59,7 +59,7 @@ When completed in Step 21, this guide will contain:
 
 ## Placeholder Content
 
-*This file will be populated during Step 21 of your learning journey.*
+*This file will be populated during Step 6.1 of your learning journey.*
 
 *In the meantime, refer to:*
 - *[Learning Plan](../LEARNING_PLAN.md) for full content*

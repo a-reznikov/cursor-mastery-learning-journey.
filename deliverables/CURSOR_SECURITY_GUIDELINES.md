@@ -8,7 +8,7 @@
 
 ## What This Document Will Include
 
-When completed in Step 16, this guide will contain:
+When completed in Step 4.6, this guide will contain:
 
 ### 1. Overview
 - Why security matters with AI tools
@@ -69,7 +69,7 @@ When completed in Step 16, this guide will contain:
 
 ## Instructions for Completing This Document
 
-**When you reach Step 16:**
+**When you reach Step 4.6:**
 
 1. Use comprehensive security content from Phase 4
 2. Get approval from security team
@@ -85,7 +85,7 @@ When completed in Step 16, this guide will contain:
 
 ## Placeholder Content
 
-*This file will be populated during Step 16 of your learning journey.*
+*This file will be populated during Step 4.6 of your learning journey.*
 
 *In the meantime, refer to:*
 - *[Phase 4: Security & Privacy](../docs/phase-4-security-privacy/)*

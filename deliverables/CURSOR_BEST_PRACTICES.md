@@ -7,7 +7,7 @@
 
 ## What This Document Will Include
 
-When completed in Step 21, this guide will contain:
+When completed in Step 6.1, this guide will contain:
 
 ### 1. Prompt Engineering
 - How to write effective prompts

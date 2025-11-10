@@ -18,7 +18,7 @@ Reusable configuration files and templates for team projects.
 **When to Create:**
 - At the start of every new project
 - When onboarding to existing projects
-- To be completed in Step 18
+- To be completed in Step 5.1
 
 **Customization Points:**
 - Tech stack section
@@ -40,7 +40,7 @@ Reusable configuration files and templates for team projects.
 **When to Create:**
 - At the start of every project
 - BEFORE first Cursor use on project
-- To be completed in Step 12
+- To be completed in Step 4.2
 
 **Security Critical:**
 - ⚠️ Always review security section
@@ -85,7 +85,7 @@ Reusable configuration files and templates for team projects.
 - At project start
 - When establishing team patterns
 - To speed up common tasks
-- To be completed in Step 19
+- To be completed in Step 5.2
 
 **Customization Points:**
 - Add component patterns

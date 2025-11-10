@@ -283,7 +283,7 @@ After completing this step:
 1. [ ] Update team recommendations based on learnings
 2. [ ] Test each model with real code from our projects
 3. [ ] Document model preferences for our use cases
-4. [ ] Move to Step 2: Plans, Limits & Context Windows
+4. [ ] Move to Step 1.2: Plans, Limits & Context Windows
 
 ---
 

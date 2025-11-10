@@ -8,7 +8,7 @@
 
 ## What This Document Will Include
 
-When completed in Step 22, this program will contain:
+When completed in Step 6.2, this program will contain:
 
 ### Program Overview
 - 12-week gradual learning program
@@ -125,7 +125,7 @@ Each week includes:
 
 ## Placeholder Content
 
-*This file will be populated during Step 22 of your learning journey.*
+*This file will be populated during Step 6.2 of your learning journey.*
 
 *As you learn, note topics that would make good weekly tips!*
 

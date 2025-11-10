@@ -331,7 +331,7 @@ Generated: [Implementation]
 - [Helpful resources]
 
 ### Internal Resources
-- [Step 8: Browser Tools](08-browser-tools-testing.md)
+- [Step 3.1: Browser Tools](01-browser-tools-testing.md)
 
 ---
 

@@ -320,7 +320,7 @@ After completing this step:
 1. [ ] Discuss plan selection with team lead
 2. [ ] Get budget approval if needed
 3. [ ] Set up usage monitoring for team
-4. [ ] Move to Step 3: Core Settings & Configuration
+4. [ ] Move to Step 1.3: Core Settings & Configuration
 
 ---
 

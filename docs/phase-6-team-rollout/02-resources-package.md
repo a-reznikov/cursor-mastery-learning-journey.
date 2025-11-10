@@ -165,9 +165,9 @@ Week 12: Advanced Features
 - [x] README.md
 - [x] LEARNING_PLAN.md
 - [x] GETTING_STARTED.md
-- [ ] CURSOR_QUICKSTART.md (Step 21)
-- [ ] CURSOR_BEST_PRACTICES.md (Step 21)
-- [ ] CURSOR_SECURITY_GUIDELINES.md (Step 16)
+- [ ] CURSOR_QUICKSTART.md (Step 6.1)
+- [ ] CURSOR_BEST_PRACTICES.md (Step 6.1)
+- [ ] CURSOR_SECURITY_GUIDELINES.md (Step 4.6)
 - [ ] PROMPT_LIBRARY.md (This step)
 - [ ] WEEKLY_TIPS.md (This step)
 
