@@ -15,7 +15,7 @@ This is a comprehensive learning program to master Cursor AI and prepare your te
 
 ## Phase 1: Foundations
 
-### Step 1: Cursor AI Models & Architecture
+### Step 1.1: Cursor AI Models & Architecture
 **Document:** `docs/phase-1-foundations/01-models-architecture.md`
 
 **Topics:**
@@ -31,7 +31,7 @@ This is a comprehensive learning program to master Cursor AI and prepare your te
 
 ---
 
-### Step 2: Plans, Limits & Context Windows
+### Step 1.2: Plans, Limits & Context Windows
 **Document:** `docs/phase-1-foundations/02-plans-limits-context.md`
 
 **Topics:**
@@ -48,7 +48,7 @@ This is a comprehensive learning program to master Cursor AI and prepare your te
 
 ---
 
-### Step 3: Core Settings & Configuration
+### Step 1.3: Core Settings & Configuration
 **Document:** `docs/phase-1-foundations/03-settings-configuration.md`  
 **Template:** `templates/cursor-settings.json`
 
@@ -68,8 +68,8 @@ This is a comprehensive learning program to master Cursor AI and prepare your te
 
 ## Phase 2: Core AI Features
 
-### Step 4: Chat Interface (Cmd+L / Ctrl+L)
-**Document:** `docs/phase-2-core-features/04-chat-interface.md`
+### Step 2.1: Chat Interface (Cmd+L / Ctrl+L)
+**Document:** `docs/phase-2-core-features/01-chat-interface.md`
 
 **Topics:**
 - Asking questions about codebase
@@ -84,8 +84,8 @@ This is a comprehensive learning program to master Cursor AI and prepare your te
 
 ---
 
-### Step 5: Inline Editing (Cmd+K / Ctrl+K)
-**Document:** `docs/phase-2-core-features/05-inline-editing.md`
+### Step 2.2: Inline Editing (Cmd+K / Ctrl+K)
+**Document:** `docs/phase-2-core-features/02-inline-editing.md`
 
 **Topics:**
 - Quick code modifications
@@ -100,8 +100,8 @@ This is a comprehensive learning program to master Cursor AI and prepare your te
 
 ---
 
-### Step 6: Composer Mode (Cmd+Shift+I)
-**Document:** `docs/phase-2-core-features/06-composer-mode.md`
+### Step 2.3: Composer Mode (Cmd+Shift+I)
+**Document:** `docs/phase-2-core-features/03-composer-mode.md`
 
 **Topics:**
 - Multi-file editing capabilities
@@ -116,8 +116,8 @@ This is a comprehensive learning program to master Cursor AI and prepare your te
 
 ---
 
-### Step 7: Codebase Understanding
-**Document:** `docs/phase-2-core-features/07-codebase-understanding.md`  
+### Step 2.4: Codebase Understanding
+**Document:** `docs/phase-2-core-features/04-codebase-understanding.md`  
 **Template:** `templates/.cursorignore.template`
 
 **Topics:**
@@ -135,8 +135,8 @@ This is a comprehensive learning program to master Cursor AI and prepare your te
 
 ## Phase 3: Advanced Features
 
-### Step 8: Browser Tools & Testing
-**Document:** `docs/phase-3-advanced-features/08-browser-tools-testing.md`
+### Step 3.1: Browser Tools & Testing
+**Document:** `docs/phase-3-advanced-features/01-browser-tools-testing.md`
 
 **Topics:**
 - Browser integration overview
@@ -151,8 +151,8 @@ This is a comprehensive learning program to master Cursor AI and prepare your te
 
 ---
 
-### Step 9: Test Writing Best Practices
-**Document:** `docs/phase-3-advanced-features/09-test-writing.md`
+### Step 3.2: Test Writing Best Practices
+**Document:** `docs/phase-3-advanced-features/02-test-writing.md`
 
 **Topics:**
 - Unit test generation prompts
@@ -167,8 +167,8 @@ This is a comprehensive learning program to master Cursor AI and prepare your te
 
 ---
 
-### Step 10: Terminal Integration
-**Document:** `docs/phase-3-advanced-features/10-terminal-integration.md`
+### Step 3.3: Terminal Integration
+**Document:** `docs/phase-3-advanced-features/03-terminal-integration.md`
 
 **Topics:**
 - Running commands through Cursor
@@ -183,10 +183,29 @@ This is a comprehensive learning program to master Cursor AI and prepare your te
 
 ---
 
+### Step 3.4: MCP (Model Context Protocol)
+**Document:** `docs/phase-3-advanced-features/04-mcp-integration.md`
+
+**Topics:**
+- What is MCP and why it matters
+- Available MCP servers and integrations
+- Setting up MCP connections
+- Custom MCP server creation
+- Use cases: databases, APIs, external tools
+- MCP vs other integration methods
+
+**Deliverables:**
+- MCP setup guide
+- Popular MCP servers list
+- Integration examples
+- Team use case recommendations
+
+---
+
 ## Phase 4: Security & Privacy 🔒
 
-### Step 11: Understanding Data Flow & Privacy
-**Document:** `docs/phase-4-security-privacy/11-data-flow-privacy.md`
+### Step 4.1: Understanding Data Flow & Privacy
+**Document:** `docs/phase-4-security-privacy/01-data-flow-privacy.md`
 
 **Topics:**
 - What data Cursor sends
@@ -201,8 +220,8 @@ This is a comprehensive learning program to master Cursor AI and prepare your te
 
 ---
 
-### Step 12: .cursorignore - Your Security Shield
-**Document:** `docs/phase-4-security-privacy/12-cursorignore-guide.md`  
+### Step 4.2: .cursorignore - Your Security Shield
+**Document:** `docs/phase-4-security-privacy/02-cursorignore-guide.md`  
 **Template:** `templates/.cursorignore.template`
 
 **Topics:**
@@ -218,8 +237,8 @@ This is a comprehensive learning program to master Cursor AI and prepare your te
 
 ---
 
-### Step 13: Environment Variables & Secrets Management
-**Document:** `docs/phase-4-security-privacy/13-secrets-management.md`
+### Step 4.3: Environment Variables & Secrets Management
+**Document:** `docs/phase-4-security-privacy/03-secrets-management.md`
 
 **Topics:**
 - Correct handling of secrets
@@ -234,8 +253,8 @@ This is a comprehensive learning program to master Cursor AI and prepare your te
 
 ---
 
-### Step 14: Safe Prompting Strategies
-**Document:** `docs/phase-4-security-privacy/14-safe-prompting.md`
+### Step 4.4: Safe Prompting Strategies
+**Document:** `docs/phase-4-security-privacy/04-safe-prompting.md`
 
 **Topics:**
 - Redacting sensitive data before sharing
@@ -250,8 +269,8 @@ This is a comprehensive learning program to master Cursor AI and prepare your te
 
 ---
 
-### Step 15: .cursorrules Security Section
-**Document:** `docs/phase-4-security-privacy/15-cursorrules-security.md`
+### Step 4.5: .cursorrules Security Section
+**Document:** `docs/phase-4-security-privacy/05-cursorrules-security.md`
 
 **Topics:**
 - Security requirements in .cursorrules
@@ -266,8 +285,8 @@ This is a comprehensive learning program to master Cursor AI and prepare your te
 
 ---
 
-### Step 16: Team Security Guidelines Document
-**Document:** `docs/phase-4-security-privacy/16-security-guidelines.md`  
+### Step 4.6: Team Security Guidelines Document
+**Document:** `docs/phase-4-security-privacy/06-security-guidelines.md`  
 **Deliverable:** `deliverables/CURSOR_SECURITY_GUIDELINES.md`
 
 **Topics:**
@@ -283,8 +302,8 @@ This is a comprehensive learning program to master Cursor AI and prepare your te
 
 ---
 
-### Step 17: Cursor Business Plan for Enterprise
-**Document:** `docs/phase-4-security-privacy/17-business-plan-enterprise.md`
+### Step 4.7: Cursor Business Plan for Enterprise
+**Document:** `docs/phase-4-security-privacy/07-business-plan-enterprise.md`
 
 **Topics:**
 - When to consider Business plan
@@ -301,8 +320,8 @@ This is a comprehensive learning program to master Cursor AI and prepare your te
 
 ## Phase 5: Team Collaboration
 
-### Step 18: .cursorrules - The Game Changer
-**Document:** `docs/phase-5-team-collaboration/18-cursorrules-guide.md`  
+### Step 5.1: .cursorrules - The Game Changer
+**Document:** `docs/phase-5-team-collaboration/01-cursorrules-guide.md`  
 **Template:** `templates/.cursorrules.template.md`
 
 **Topics:**
@@ -319,8 +338,8 @@ This is a comprehensive learning program to master Cursor AI and prepare your te
 
 ---
 
-### Step 19: Snippets & Templates
-**Document:** `docs/phase-5-team-collaboration/19-snippets-templates.md`  
+### Step 5.2: Snippets & Templates
+**Document:** `docs/phase-5-team-collaboration/02-snippets-templates.md`  
 **Template:** `templates/snippets.code-snippets`
 
 **Topics:**
@@ -336,8 +355,8 @@ This is a comprehensive learning program to master Cursor AI and prepare your te
 
 ---
 
-### Step 20: CI/CD Integration Patterns
-**Document:** `docs/phase-5-team-collaboration/20-cicd-integration.md`
+### Step 5.3: CI/CD Integration Patterns
+**Document:** `docs/phase-5-team-collaboration/03-cicd-integration.md`
 
 **Topics:**
 - Using Cursor for CI/CD generation
@@ -354,8 +373,8 @@ This is a comprehensive learning program to master Cursor AI and prepare your te
 
 ## Phase 6: Team Rollout
 
-### Step 21: Create Team Documentation
-**Document:** `docs/phase-6-team-rollout/21-team-documentation.md`  
+### Step 6.1: Create Team Documentation
+**Document:** `docs/phase-6-team-rollout/01-team-documentation.md`  
 **Deliverables:**
 - `deliverables/CURSOR_QUICKSTART.md`
 - `deliverables/CURSOR_BEST_PRACTICES.md`
@@ -373,8 +392,8 @@ This is a comprehensive learning program to master Cursor AI and prepare your te
 
 ---
 
-### Step 22: Team Resources Package
-**Document:** `docs/phase-6-team-rollout/22-resources-package.md`  
+### Step 6.2: Team Resources Package
+**Document:** `docs/phase-6-team-rollout/02-resources-package.md`  
 **Deliverables:**
 - `deliverables/PROMPT_LIBRARY.md`
 - `deliverables/WEEKLY_TIPS.md`
@@ -393,8 +412,8 @@ This is a comprehensive learning program to master Cursor AI and prepare your te
 
 ---
 
-### Step 23: Measure & Iterate
-**Document:** `docs/phase-6-team-rollout/23-measure-iterate.md`
+### Step 6.3: Measure & Iterate
+**Document:** `docs/phase-6-team-rollout/03-measure-iterate.md`
 
 **Topics:**
 - Metrics to track (productivity, usage, quality)
@@ -426,7 +445,7 @@ This is a comprehensive learning program to master Cursor AI and prepare your te
 5. `WEEKLY_TIPS.md` - Progressive adoption program
 
 ### Learning Documentation
-23 detailed learning documents capturing your journey
+24 detailed learning documents capturing your journey
 
 ---
 

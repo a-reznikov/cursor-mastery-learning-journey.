@@ -1,21 +1,21 @@
-# Phase 6: Team Rollout (Day 11-12)
+# Phase 6: Team Rollout
 
 Preparing and enabling your team
 
 ## Steps in This Phase
 
-1. **[Step 21: Create Team Documentation](21-team-documentation.md)**
+1. **[Step 6.1: Create Team Documentation](01-team-documentation.md)**
    - Quickstart guide (CURSOR_QUICKSTART.md)
    - Best practices document (CURSOR_BEST_PRACTICES.md)
 
-2. **[Step 22: Team Resources Package](22-resources-package.md)**
+2. **[Step 6.2: Team Resources Package](02-resources-package.md)**
    - .cursorrules template
    - Shareable Cursor settings JSON
    - Prompt library (PROMPT_LIBRARY.md)
    - Video walkthrough/demo
    - Weekly tips program (12-week schedule)
 
-3. **[Step 23: Measure & Iterate](23-measure-iterate.md)**
+3. **[Step 6.3: Measure & Iterate](03-measure-iterate.md)**
    - Metrics to track (productivity, usage, quality)
    - Feedback collection (surveys, retrospectives)
    - Continuous improvement process
@@ -39,7 +39,7 @@ All team-ready documents completed:
 - WEEKLY_TIPS.md
 
 ## Estimated Time
-**6-8 hours** (spread over 2 days)
+**6-8 hours**
 
 ---
 

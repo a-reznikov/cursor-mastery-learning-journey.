@@ -83,7 +83,7 @@ cursor-learning/
 **Actual Completion:** ____  
 
 **Total Time Invested:** ___ hours  
-**Documents Created:** ___ / 45  
+**Documents Created:** ___ / 46  
 **Deliverables Ready:** ___ / 5  
 
 
@@ -95,39 +95,40 @@ cursor-learning/
 ✅ = Completed | 🟡 = In Progress | ⬜ = Not Started
 
 - [ ] **Phase 1: Foundations**
-  - [ ] Step 1: Models & Architecture
-  - [ ] Step 2: Plans, Limits & Context
-  - [ ] Step 3: Settings & Configuration
+  - [ ] Step 1.1: Models & Architecture
+  - [ ] Step 1.2: Plans, Limits & Context
+  - [ ] Step 1.3: Settings & Configuration
 
 - [ ] **Phase 2: Core AI Features**
-  - [ ] Step 4: Chat Interface
-  - [ ] Step 5: Inline Editing
-  - [ ] Step 6: Composer Mode
-  - [ ] Step 7: Codebase Understanding
+  - [ ] Step 2.1: Chat Interface
+  - [ ] Step 2.2: Inline Editing
+  - [ ] Step 2.3: Composer Mode
+  - [ ] Step 2.4: Codebase Understanding
 
 - [ ] **Phase 3: Advanced Features**
-  - [ ] Step 8: Browser Tools & Testing
-  - [ ] Step 9: Test Writing Best Practices
-  - [ ] Step 10: Terminal Integration
+  - [ ] Step 3.1: Browser Tools & Testing
+  - [ ] Step 3.2: Test Writing Best Practices
+  - [ ] Step 3.3: Terminal Integration
+  - [ ] Step 3.4: MCP (Model Context Protocol)
 
 - [ ] **Phase 4: Security & Privacy** 🔒
-  - [ ] Step 11: Data Flow & Privacy
-  - [ ] Step 12: .cursorignore Guide
-  - [ ] Step 13: Secrets Management
-  - [ ] Step 14: Safe Prompting
-  - [ ] Step 15: .cursorrules Security
-  - [ ] Step 16: Security Guidelines Document
-  - [ ] Step 17: Business Plan for Enterprise
+  - [ ] Step 4.1: Data Flow & Privacy
+  - [ ] Step 4.2: .cursorignore Guide
+  - [ ] Step 4.3: Secrets Management
+  - [ ] Step 4.4: Safe Prompting
+  - [ ] Step 4.5: .cursorrules Security
+  - [ ] Step 4.6: Security Guidelines Document
+  - [ ] Step 4.7: Business Plan for Enterprise
 
 - [ ] **Phase 5: Team Collaboration**
-  - [ ] Step 18: .cursorrules Guide
-  - [ ] Step 19: Snippets & Templates
-  - [ ] Step 20: CI/CD Integration
+  - [ ] Step 5.1: .cursorrules Guide
+  - [ ] Step 5.2: Snippets & Templates
+  - [ ] Step 5.3: CI/CD Integration
 
 - [ ] **Phase 6: Team Rollout**
-  - [ ] Step 21: Team Documentation
-  - [ ] Step 22: Resources Package
-  - [ ] Step 23: Measure & Iterate
+  - [ ] Step 6.1: Team Documentation
+  - [ ] Step 6.2: Resources Package
+  - [ ] Step 6.3: Measure & Iterate
 
 ## 🎯 Next Actions
 

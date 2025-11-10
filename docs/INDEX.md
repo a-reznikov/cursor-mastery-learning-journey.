@@ -12,78 +12,79 @@
 
 ---
 
-## Phase 1: Foundations (Day 1-2)
+## Phase 1: Foundations
 
 | Step | Topic | Status | Document |
 |------|-------|--------|----------|
-| 1 | Cursor AI Models & Architecture | ⬜ | [01-models-architecture.md](phase-1-foundations/01-models-architecture.md) |
-| 2 | Plans, Limits & Context Windows | ⬜ | [02-plans-limits-context.md](phase-1-foundations/02-plans-limits-context.md) |
-| 3 | Core Settings & Configuration | ⬜ | [03-settings-configuration.md](phase-1-foundations/03-settings-configuration.md) |
+| 1.1 | Cursor AI Models & Architecture | ⬜ | [01-models-architecture.md](phase-1-foundations/01-models-architecture.md) |
+| 1.2 | Plans, Limits & Context Windows | ⬜ | [02-plans-limits-context.md](phase-1-foundations/02-plans-limits-context.md) |
+| 1.3 | Core Settings & Configuration | ⬜ | [03-settings-configuration.md](phase-1-foundations/03-settings-configuration.md) |
 
 **Phase Completion:** 0/3 steps
 
 ---
 
-## Phase 2: Core AI Features (Day 3-4)
+## Phase 2: Core AI Features
 
 | Step | Topic | Status | Document |
 |------|-------|--------|----------|
-| 4 | Chat Interface (Cmd+L) | ⬜ | [04-chat-interface.md](phase-2-core-features/04-chat-interface.md) |
-| 5 | Inline Editing (Cmd+K) | ⬜ | [05-inline-editing.md](phase-2-core-features/05-inline-editing.md) |
-| 6 | Composer Mode (Cmd+Shift+I) | ⬜ | [06-composer-mode.md](phase-2-core-features/06-composer-mode.md) |
-| 7 | Codebase Understanding | ⬜ | [07-codebase-understanding.md](phase-2-core-features/07-codebase-understanding.md) |
+| 2.1 | Chat Interface (Cmd+L) | ⬜ | [01-chat-interface.md](phase-2-core-features/01-chat-interface.md) |
+| 2.2 | Inline Editing (Cmd+K) | ⬜ | [02-inline-editing.md](phase-2-core-features/02-inline-editing.md) |
+| 2.3 | Composer Mode (Cmd+Shift+I) | ⬜ | [03-composer-mode.md](phase-2-core-features/03-composer-mode.md) |
+| 2.4 | Codebase Understanding | ⬜ | [04-codebase-understanding.md](phase-2-core-features/04-codebase-understanding.md) |
 
 **Phase Completion:** 0/4 steps
 
 ---
 
-## Phase 3: Advanced Features (Day 5-6)
+## Phase 3: Advanced Features
 
 | Step | Topic | Status | Document |
 |------|-------|--------|----------|
-| 8 | Browser Tools & Testing | ⬜ | [08-browser-tools-testing.md](phase-3-advanced-features/08-browser-tools-testing.md) |
-| 9 | Test Writing Best Practices | ⬜ | [09-test-writing.md](phase-3-advanced-features/09-test-writing.md) |
-| 10 | Terminal Integration | ⬜ | [10-terminal-integration.md](phase-3-advanced-features/10-terminal-integration.md) |
+| 3.1 | Browser Tools & Testing | ⬜ | [01-browser-tools-testing.md](phase-3-advanced-features/01-browser-tools-testing.md) |
+| 3.2 | Test Writing Best Practices | ⬜ | [02-test-writing.md](phase-3-advanced-features/02-test-writing.md) |
+| 3.3 | Terminal Integration | ⬜ | [03-terminal-integration.md](phase-3-advanced-features/03-terminal-integration.md) |
+| 3.4 | MCP (Model Context Protocol) | ⬜ | [04-mcp-integration.md](phase-3-advanced-features/04-mcp-integration.md) |
 
-**Phase Completion:** 0/3 steps
+**Phase Completion:** 0/4 steps
 
 ---
 
-## Phase 4: Security & Privacy 🔒 (Day 7-8)
+## Phase 4: Security & Privacy 🔒
 
 | Step | Topic | Status | Document |
 |------|-------|--------|----------|
-| 11 | Understanding Data Flow & Privacy | ⬜ | [11-data-flow-privacy.md](phase-4-security-privacy/11-data-flow-privacy.md) |
-| 12 | .cursorignore - Your Security Shield | ⬜ | [12-cursorignore-guide.md](phase-4-security-privacy/12-cursorignore-guide.md) |
-| 13 | Environment Variables & Secrets | ⬜ | [13-secrets-management.md](phase-4-security-privacy/13-secrets-management.md) |
-| 14 | Safe Prompting Strategies | ⬜ | [14-safe-prompting.md](phase-4-security-privacy/14-safe-prompting.md) |
-| 15 | .cursorrules Security Section | ⬜ | [15-cursorrules-security.md](phase-4-security-privacy/15-cursorrules-security.md) |
-| 16 | Team Security Guidelines Document | ⬜ | [16-security-guidelines.md](phase-4-security-privacy/16-security-guidelines.md) |
-| 17 | Cursor Business Plan for Enterprise | ⬜ | [17-business-plan-enterprise.md](phase-4-security-privacy/17-business-plan-enterprise.md) |
+| 4.1 | Understanding Data Flow & Privacy | ⬜ | [01-data-flow-privacy.md](phase-4-security-privacy/01-data-flow-privacy.md) |
+| 4.2 | .cursorignore - Your Security Shield | ⬜ | [02-cursorignore-guide.md](phase-4-security-privacy/02-cursorignore-guide.md) |
+| 4.3 | Environment Variables & Secrets | ⬜ | [03-secrets-management.md](phase-4-security-privacy/03-secrets-management.md) |
+| 4.4 | Safe Prompting Strategies | ⬜ | [04-safe-prompting.md](phase-4-security-privacy/04-safe-prompting.md) |
+| 4.5 | .cursorrules Security Section | ⬜ | [05-cursorrules-security.md](phase-4-security-privacy/05-cursorrules-security.md) |
+| 4.6 | Team Security Guidelines Document | ⬜ | [06-security-guidelines.md](phase-4-security-privacy/06-security-guidelines.md) |
+| 4.7 | Cursor Business Plan for Enterprise | ⬜ | [07-business-plan-enterprise.md](phase-4-security-privacy/07-business-plan-enterprise.md) |
 
 **Phase Completion:** 0/7 steps
 
 ---
 
-## Phase 5: Team Collaboration (Day 9-10)
+## Phase 5: Team Collaboration
 
 | Step | Topic | Status | Document |
 |------|-------|--------|----------|
-| 18 | .cursorrules - The Game Changer | ⬜ | [18-cursorrules-guide.md](phase-5-team-collaboration/18-cursorrules-guide.md) |
-| 19 | Snippets & Templates | ⬜ | [19-snippets-templates.md](phase-5-team-collaboration/19-snippets-templates.md) |
-| 20 | CI/CD Integration Patterns | ⬜ | [20-cicd-integration.md](phase-5-team-collaboration/20-cicd-integration.md) |
+| 5.1 | .cursorrules - The Game Changer | ⬜ | [01-cursorrules-guide.md](phase-5-team-collaboration/01-cursorrules-guide.md) |
+| 5.2 | Snippets & Templates | ⬜ | [02-snippets-templates.md](phase-5-team-collaboration/02-snippets-templates.md) |
+| 5.3 | CI/CD Integration Patterns | ⬜ | [03-cicd-integration.md](phase-5-team-collaboration/03-cicd-integration.md) |
 
 **Phase Completion:** 0/3 steps
 
 ---
 
-## Phase 6: Team Rollout (Day 11-12)
+## Phase 6: Team Rollout
 
 | Step | Topic | Status | Document |
 |------|-------|--------|----------|
-| 21 | Create Team Documentation | ⬜ | [21-team-documentation.md](phase-6-team-rollout/21-team-documentation.md) |
-| 22 | Team Resources Package | ⬜ | [22-resources-package.md](phase-6-team-rollout/22-resources-package.md) |
-| 23 | Measure & Iterate | ⬜ | [23-measure-iterate.md](phase-6-team-rollout/23-measure-iterate.md) |
+| 6.1 | Create Team Documentation | ⬜ | [01-team-documentation.md](phase-6-team-rollout/01-team-documentation.md) |
+| 6.2 | Team Resources Package | ⬜ | [02-resources-package.md](phase-6-team-rollout/02-resources-package.md) |
+| 6.3 | Measure & Iterate | ⬜ | [03-measure-iterate.md](phase-6-team-rollout/03-measure-iterate.md) |
 
 **Phase Completion:** 0/3 steps
 
@@ -91,10 +92,10 @@
 
 ## 📊 Overall Progress
 
-**Total Steps:** 23  
+**Total Steps:** 24  
 **Completed:** 0  
 **In Progress:** 0  
-**Not Started:** 23  
+**Not Started:** 24  
 
 **Progress:** 0%
 
@@ -108,20 +109,25 @@
 - [Settings](phase-1-foundations/03-settings-configuration.md)
 
 ### Core Features
-- [Chat Interface](phase-2-core-features/04-chat-interface.md)
-- [Inline Editing](phase-2-core-features/05-inline-editing.md)
-- [Composer Mode](phase-2-core-features/06-composer-mode.md)
+- [Chat Interface](phase-2-core-features/01-chat-interface.md)
+- [Inline Editing](phase-2-core-features/02-inline-editing.md)
+- [Composer Mode](phase-2-core-features/03-composer-mode.md)
+
+### Advanced Integrations
+- [Browser Tools](phase-3-advanced-features/01-browser-tools-testing.md)
+- [MCP Integration](phase-3-advanced-features/04-mcp-integration.md)
+- [Terminal Integration](phase-3-advanced-features/03-terminal-integration.md)
 
 ### Security (Critical!)
-- [Data Privacy](phase-4-security-privacy/11-data-flow-privacy.md)
-- [.cursorignore](phase-4-security-privacy/12-cursorignore-guide.md)
-- [Secrets Management](phase-4-security-privacy/13-secrets-management.md)
-- [Security Guidelines](phase-4-security-privacy/16-security-guidelines.md)
+- [Data Privacy](phase-4-security-privacy/01-data-flow-privacy.md)
+- [.cursorignore](phase-4-security-privacy/02-cursorignore-guide.md)
+- [Secrets Management](phase-4-security-privacy/03-secrets-management.md)
+- [Security Guidelines](phase-4-security-privacy/06-security-guidelines.md)
 
 ### Team Setup
-- [.cursorrules Guide](phase-5-team-collaboration/18-cursorrules-guide.md)
-- [Team Documentation](phase-6-team-rollout/21-team-documentation.md)
-- [Resources Package](phase-6-team-rollout/22-resources-package.md)
+- [.cursorrules Guide](phase-5-team-collaboration/01-cursorrules-guide.md)
+- [Team Documentation](phase-6-team-rollout/01-team-documentation.md)
+- [Resources Package](phase-6-team-rollout/02-resources-package.md)
 
 ---
 
