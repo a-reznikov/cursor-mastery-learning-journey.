@@ -1,6 +1,6 @@
 # Cursor AI Best Practices
 
-**Status:** 🟡 To be completed in Step 21  
+**Status:** 🟡 To be completed in Step 6.1  
 **Target Audience:** All team members using Cursor
 
 ---
@@ -48,7 +48,7 @@ When completed in Step 21, this guide will contain:
 
 ## Instructions for Completing This Document
 
-**When you reach Step 21:**
+**When you reach Step 6.1:**
 
 1. Compile best practices discovered during your learning
 2. Include real examples from your codebase
@@ -65,7 +65,7 @@ When completed in Step 21, this guide will contain:
 *This file will be populated during Step 6.1 of your learning journey.*
 
 *In the meantime, refer to:*
-- *Your notes from all 23 steps*
+- *Your notes from all 24 steps*
 - *[Learning Plan](../LEARNING_PLAN.md) for comprehensive content*
 - *[Phase 6, Step 6.1](../docs/phase-6-team-rollout/01-team-documentation.md)*
 

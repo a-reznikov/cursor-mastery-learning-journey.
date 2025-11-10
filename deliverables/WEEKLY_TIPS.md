@@ -1,6 +1,6 @@
 # Cursor Weekly Tips - 12-Week Adoption Program
 
-**Status:** 🟡 To be completed in Step 22  
+**Status:** 🟡 To be completed in Step 6.2  
 **Target Audience:** Team leads, managers  
 **Purpose:** Progressive skill building and gradual adoption
 
@@ -57,9 +57,9 @@ Each week includes:
 
 ## Instructions for Completing This Document
 
-**When you reach Step 22:**
+**When you reach Step 6.2:**
 
-1. Review all learning from Steps 1-21
+1. Review all learning from all 24 steps (1.1-6.3)
 2. Identify 12 most important topics
 3. Order from beginner to advanced
 4. Create engaging tip format

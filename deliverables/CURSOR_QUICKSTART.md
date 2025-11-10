@@ -1,6 +1,6 @@
 # Cursor AI Quickstart Guide
 
-**Status:** 🟡 To be completed in Step 21  
+**Status:** 🟡 To be completed in Step 6.1  
 **Estimated Time to Complete:** 15 minutes  
 **Target Audience:** New Cursor users on the team
 

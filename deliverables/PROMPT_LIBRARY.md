@@ -1,6 +1,6 @@
 # Cursor Prompt Library
 
-**Status:** 🟡 To be completed in Step 22  
+**Status:** 🟡 To be completed in Step 6.2  
 **Target Audience:** All team members  
 **Purpose:** Share proven, effective prompts for common tasks
 

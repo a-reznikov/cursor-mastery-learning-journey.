@@ -244,9 +244,9 @@ The pre-filled structure is a guide. Fill it with YOUR learnings, YOUR examples,
 
 ### Build Progressively
 Templates and deliverables build on each other:
-- .cursorignore (Step 12) → Used in all projects
-- .cursorrules (Step 18) → Uses patterns learned earlier
-- Deliverables (Steps 16, 21-22) → Compile all learnings
+- .cursorignore (Step 4.2) → Used in all projects
+- .cursorrules (Step 5.1) → Uses patterns learned earlier
+- Deliverables (Steps 4.6, 6.1-6.2) → Compile all learnings
 
 ---
 
@@ -335,7 +335,7 @@ Templates and deliverables build on each other:
    - [ ] Start Step 1: Models & Architecture
 
 3. **This Week:**
-   - [ ] Complete Phase 1 (Steps 1-3)
+   - [ ] Complete Phase 1 (Steps 1.1-1.3)
    - [ ] Take daily notes
    - [ ] Update progress tracker
 

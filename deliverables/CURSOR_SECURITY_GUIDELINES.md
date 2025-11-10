@@ -1,6 +1,6 @@
 # Cursor AI Security Guidelines
 
-**Status:** 🟡 To be completed in Step 16  
+**Status:** 🟡 To be completed in Step 4.6  
 **Target Audience:** All team members (MANDATORY READING)  
 **⚠️ CRITICAL DOCUMENT**
 
