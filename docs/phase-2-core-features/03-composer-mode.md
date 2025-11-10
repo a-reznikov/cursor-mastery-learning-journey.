@@ -1,4 +1,4 @@
-# Step 6: Composer Mode (Cmd+Shift+I)
+# Step 2.3: Composer Mode (Cmd+Shift+I)
 
 **Phase:** Core AI Features  
 **Date Started:** ____  
@@ -355,7 +355,7 @@ After completing this step:
 1. [ ] Implement one complete feature with Composer
 2. [ ] Document effective Composer workflows
 3. [ ] Build prompt templates for common features
-4. [ ] Move to Step 7: Codebase Understanding
+4. [ ] Move to Step 2.4: Codebase Understanding
 
 ---
 

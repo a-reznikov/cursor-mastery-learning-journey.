@@ -1,4 +1,4 @@
-# Step 4: Chat Interface (Cmd+L / Ctrl+L)
+# Step 2.1: Chat Interface (Cmd+L / Ctrl+L)
 
 **Phase:** Core AI Features  
 **Date Started:** ____  
@@ -356,7 +356,7 @@ After completing this step:
 1. [ ] Practice Chat with real questions from your work
 2. [ ] Build a personal prompt library
 3. [ ] Share effective prompts with team
-4. [ ] Move to Step 5: Inline Editing (Cmd+K)
+4. [ ] Move to Step 2.2: Inline Editing (Cmd+K)
 
 ---
 

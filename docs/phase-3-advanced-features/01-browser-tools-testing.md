@@ -1,4 +1,4 @@
-# Step 8: Browser Tools & Testing
+# Step 3.1: Browser Tools & Testing
 
 **Phase:** Advanced Features  
 **Date Started:** ____  
@@ -325,7 +325,7 @@ After completing this step:
 1. [ ] Test your app's critical flows with browser tools
 2. [ ] Create E2E test template
 3. [ ] Document testing patterns
-4. [ ] Move to Step 9: Test Writing Best Practices
+4. [ ] Move to Step 3.2: Test Writing Best Practices
 
 ---
 

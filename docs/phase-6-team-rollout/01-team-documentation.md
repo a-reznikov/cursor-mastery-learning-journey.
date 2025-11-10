@@ -1,4 +1,4 @@
-# Step 21: Create Team Documentation
+# Step 6.1: Create Team Documentation
 
 **Phase:** Team Rollout  
 **Date Started:** ____  
@@ -289,7 +289,7 @@ Contact: [Your Slack channels]
 1. [ ] Complete both documents
 2. [ ] Pilot test with 2-3 users
 3. [ ] Refine based on feedback
-4. [ ] Move to Step 22: Team Resources Package
+4. [ ] Move to Step 6.2: Team Resources Package
 
 ---
 

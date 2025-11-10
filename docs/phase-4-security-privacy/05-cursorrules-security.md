@@ -1,4 +1,4 @@
-# Step 15: .cursorrules Security Section
+# Step 4.5: .cursorrules Security Section
 
 **Phase:** Security & Privacy 🔒  
 **Date Started:** ____  
@@ -218,7 +218,7 @@ Never Include:
 1. [ ] Add security section to .cursorrules
 2. [ ] Test with code generation
 3. [ ] Share checklist with team
-4. [ ] Move to Step 16: Team Security Guidelines Document
+4. [ ] Move to Step 4.6: Team Security Guidelines Document
 
 ---
 

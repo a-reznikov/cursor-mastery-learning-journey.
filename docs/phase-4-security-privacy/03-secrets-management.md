@@ -1,4 +1,4 @@
-# Step 13: Environment Variables & Secrets Management
+# Step 4.3: Environment Variables & Secrets Management
 
 **Phase:** Security & Privacy 🔒  
 **Date Started:** ____  
@@ -300,7 +300,7 @@ Pattern: [Your approach]
 1. [ ] Set up secret scanning tool
 2. [ ] Scan all repositories
 3. [ ] Document incident response
-4. [ ] Move to Step 14: Safe Prompting Strategies
+4. [ ] Move to Step 4.4: Safe Prompting Strategies
 
 ---
 

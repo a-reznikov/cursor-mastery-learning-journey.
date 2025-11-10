@@ -1,4 +1,4 @@
-# Step 7: Codebase Understanding
+# Step 2.4: Codebase Understanding
 
 **Phase:** Core AI Features  
 **Date Started:** ____  

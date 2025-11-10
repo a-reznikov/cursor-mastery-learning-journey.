@@ -1,4 +1,4 @@
-# Step 2: Plans, Limits & Context Windows
+# Step 1.2: Plans, Limits & Context Windows
 
 **Phase:** Foundations  
 **Date Started:** ____  

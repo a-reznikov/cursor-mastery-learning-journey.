@@ -1,4 +1,4 @@
-# Step 19: Snippets & Templates
+# Step 5.2: Snippets & Templates
 
 **Phase:** Team Collaboration  
 **Date Started:** ____  
@@ -272,7 +272,7 @@ Result: [Generated code]
 1. [ ] Create snippets for common patterns
 2. [ ] Test with team
 3. [ ] Gather and add more patterns
-4. [ ] Move to Step 20: CI/CD Integration Patterns
+4. [ ] Move to Step 5.3: CI/CD Integration Patterns
 
 ---
 

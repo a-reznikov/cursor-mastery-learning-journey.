@@ -1,4 +1,4 @@
-# Step 10: Terminal Integration
+# Step 3.3: Terminal Integration
 
 **Phase:** Advanced Features  
 **Date Started:** ____  

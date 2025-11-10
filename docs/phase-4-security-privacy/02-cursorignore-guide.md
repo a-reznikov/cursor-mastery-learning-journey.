@@ -1,4 +1,4 @@
-# Step 12: .cursorignore - Your Security Shield
+# Step 4.2: .cursorignore - Your Security Shield
 
 **Phase:** Security & Privacy 🔒  
 **Date Started:** ____  
@@ -335,7 +335,7 @@ After completing this step:
 1. [ ] Create .cursorignore for all active projects
 2. [ ] Test with real sensitive files
 3. [ ] Add to project onboarding checklist
-4. [ ] Move to Step 13: Environment Variables & Secrets Management
+4. [ ] Move to Step 4.3: Environment Variables & Secrets Management
 
 ---
 

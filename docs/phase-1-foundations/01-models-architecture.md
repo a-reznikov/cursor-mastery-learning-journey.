@@ -1,4 +1,4 @@
-# Step 1: Cursor AI Models & Architecture
+# Step 1.1: Cursor AI Models & Architecture
 
 **Phase:** Foundations  
 **Date Started:** ____  

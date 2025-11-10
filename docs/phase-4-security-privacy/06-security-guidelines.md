@@ -1,4 +1,4 @@
-# Step 16: Team Security Guidelines Document
+# Step 4.6: Team Security Guidelines Document
 
 **Phase:** Security & Privacy 🔒  
 **Date Started:** ____  
@@ -242,7 +242,7 @@ I have read and understand these security guidelines.
 1. [ ] Complete guidelines document
 2. [ ] Get all required approvals
 3. [ ] Set up acknowledgment tracking
-4. [ ] Move to Step 17: Cursor Business Plan for Enterprise
+4. [ ] Move to Step 4.7: Cursor Business Plan for Enterprise
 
 ---
 

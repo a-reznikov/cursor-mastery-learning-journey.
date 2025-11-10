@@ -1,4 +1,4 @@
-# Step 18: .cursorrules - The Game Changer
+# Step 5.1: .cursorrules - The Game Changer
 
 **Phase:** Team Collaboration  
 **Date Started:** ____  
@@ -282,7 +282,7 @@ Key rules:
 1. [ ] Create .cursorrules for all active projects
 2. [ ] Test effectiveness with team
 3. [ ] Gather feedback and iterate
-4. [ ] Move to Step 19: Snippets & Templates
+4. [ ] Move to Step 5.2: Snippets & Templates
 
 ---
 

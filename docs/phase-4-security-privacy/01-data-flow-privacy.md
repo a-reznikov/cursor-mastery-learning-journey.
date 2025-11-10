@@ -1,4 +1,4 @@
-# Step 11: Understanding Data Flow & Privacy
+# Step 4.1: Understanding Data Flow & Privacy
 
 **Phase:** Security & Privacy 🔒  
 **Date Started:** ____  
@@ -338,7 +338,7 @@ After completing this step:
 1. [ ] Configure privacy settings appropriately
 2. [ ] Document findings for security team
 3. [ ] Get approval for team usage if needed
-4. [ ] Move to Step 12: .cursorignore - Your Security Shield
+4. [ ] Move to Step 4.2: .cursorignore - Your Security Shield
 
 ---
 

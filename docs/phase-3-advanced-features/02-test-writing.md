@@ -1,4 +1,4 @@
-# Step 9: Test Writing Best Practices
+# Step 3.2: Test Writing Best Practices
 
 **Phase:** Advanced Features  
 **Date Started:** ____  
@@ -350,7 +350,7 @@ After completing this step:
 1. [ ] Generate tests for existing untested code
 2. [ ] Try TDD approach on new feature
 3. [ ] Build test prompt library
-4. [ ] Move to Step 10: Terminal Integration
+4. [ ] Move to Step 3.3: Terminal Integration
 
 ---
 

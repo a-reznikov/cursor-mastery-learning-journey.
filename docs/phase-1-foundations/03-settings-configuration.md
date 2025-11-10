@@ -1,4 +1,4 @@
-# Step 3: Core Settings & Configuration
+# Step 1.3: Core Settings & Configuration
 
 **Phase:** Foundations  
 **Date Started:** ____  

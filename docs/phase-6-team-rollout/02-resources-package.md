@@ -1,4 +1,4 @@
-# Step 22: Team Resources Package
+# Step 6.2: Team Resources Package
 
 **Phase:** Team Rollout  
 **Date Started:** ____  
@@ -356,7 +356,7 @@ Questions? #cursor-help
 1. [ ] Complete all deliverables
 2. [ ] Record video walkthrough
 3. [ ] Create distribution package
-4. [ ] Move to Step 23: Measure & Iterate
+4. [ ] Move to Step 6.3: Measure & Iterate
 
 ---
 

@@ -1,4 +1,4 @@
-# Step 17: Cursor Business Plan for Enterprise
+# Step 4.7: Cursor Business Plan for Enterprise
 
 **Phase:** Security & Privacy 🔒  
 **Date Started:** ____  

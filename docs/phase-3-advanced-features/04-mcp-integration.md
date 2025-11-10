@@ -1,4 +1,4 @@
-# Step 11: MCP (Model Context Protocol)
+# Step 3.4: MCP (Model Context Protocol)
 
 **Phase:** Advanced Features  
 **Date Started:** ____  
@@ -413,7 +413,7 @@ Result: [What happened]
 1. [ ] Install and test 1-2 MCP servers
 2. [ ] Document team use cases
 3. [ ] Update security guidelines for MCP
-4. [ ] Move to Step 12: Understanding Data Flow & Privacy
+4. [ ] Move to Step 4.1: Understanding Data Flow & Privacy
 
 ---
 

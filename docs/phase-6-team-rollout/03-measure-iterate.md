@@ -1,4 +1,4 @@
-# Step 23: Measure & Iterate
+# Step 6.3: Measure & Iterate
 
 **Phase:** Team Rollout  
 **Date Started:** ____  

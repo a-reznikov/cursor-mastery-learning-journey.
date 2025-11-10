@@ -1,4 +1,4 @@
-# Step 14: Safe Prompting Strategies
+# Step 4.4: Safe Prompting Strategies
 
 **Phase:** Security & Privacy 🔒  
 **Date Started:** ____  
@@ -216,7 +216,7 @@ sed -E \
 1. [ ] Create redaction script
 2. [ ] Test with real (redacted) data
 3. [ ] Train team on safe prompting
-4. [ ] Move to Step 15: .cursorrules Security Section
+4. [ ] Move to Step 4.5: .cursorrules Security Section
 
 ---
 

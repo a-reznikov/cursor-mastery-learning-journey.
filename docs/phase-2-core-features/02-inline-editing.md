@@ -1,4 +1,4 @@
-# Step 5: Inline Editing (Cmd+K / Ctrl+K)
+# Step 2.2: Inline Editing (Cmd+K / Ctrl+K)
 
 **Phase:** Core AI Features  
 **Date Started:** ____  
@@ -325,7 +325,7 @@ After completing this step:
 1. [ ] Practice Cmd+K on real code
 2. [ ] Build a library of effective prompts
 3. [ ] Compare Cmd+K vs manual editing speed
-4. [ ] Move to Step 6: Composer Mode
+4. [ ] Move to Step 2.3: Composer Mode
 
 ---
 
