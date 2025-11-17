@@ -43,7 +43,7 @@ By the end of this step, I should be able to:
 - **High‑quality summarization**: condensing long PRs, meeting notes, or technical docs into actionable summaries.
 
 **Performance:**
-- Speed: ?
+- Speed: ? (medium)
 - Cost: Input - 3$ / Output - 15$ per million tokens
 - Context: 200k (Max Mode - 1M)
 - Capabilities: 🔌tools / 💡 thinking / 🌅 images
@@ -54,23 +54,25 @@ It works very well with a large context and produces an almost error-free result
 
 ---
 
-#### Claude Opus 4.1.1 (Most Capable)
+#### Claude Opus 4.1 (Most Capable)
 **Characteristics:**
-- 
-- 
-- 
+- **Core specialization**: Top-tier, high-capability model for complex reasoning, multi-step synthesis, and creative/high-stakes outputs.
+- **Key capabilities**: Deep factual & logical reasoning, strong multi-turn context handling, advanced code understanding and multimodal synthesis.
+- **Limitations & controls**: Higher latency and cost; may still hallucinate on obscure facts — use strict guardrails, retrieval/RAG, and sampling/system-prompt controls for safer outputs.
 
 **Best For:**
-- 
-- 
+- **High‑stakes, in-depth research & synthesis**: literature reviews, technical whitepapers, policy analysis requiring careful reasoning.
+- **Complex multi‑step code & architecture work**: designing systems, large refactors, cross-file reasoning, advanced code generation and explanation.
+- **Expert-level technical writing**: high-quality docs, RFCs, proposals, and developer-facing tutorials with precise tone and structure.
 
 **Performance:**
-- Speed: 
-- Cost: 
-- Context: 
+- Speed: ? (low)
+- Cost: Input - 15$ / Output - 75$ per million tokens
+- Context: - (Max mode 200k)
+- Capabilities: 🔌tools / 💡 thinking / 🌅 images
 
 **My Notes:**
-
+It's too expensive. I need to think about how I can try this model in my work.
 
 ---
 
