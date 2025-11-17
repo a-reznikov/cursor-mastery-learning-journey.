@@ -1,9 +1,9 @@
 # Step 1.1: Cursor AI Models & Architecture
 
 **Phase:** Foundations  
-**Date Started:** ____  
+**Date Started:** 17.11.25  
 **Date Completed:** ____  
-**Time Spent:** ___ hours
+**Time Spent:** 1 hours
 
 ---
 
@@ -17,7 +17,7 @@ Understanding the different AI models available in Cursor, their capabilities, p
 
 By the end of this step, I should be able to:
 
-- [ ] Explain the differences between Claude Sonnet 4.5, Opus 4, GPT-4o, and Cursor Small
+- [ ] Explain the differences between Claude Sonnet 4.5, Opus 4.1, GPT-4o, and Composer1
 - [ ] Choose the appropriate model for different development tasks
 - [ ] Understand the performance vs capability trade-offs
 - [ ] Configure model selection in Cursor settings
@@ -31,27 +31,30 @@ By the end of this step, I should be able to:
 
 **Models in Cursor:**
 
-#### Claude Sonnet 4.5 (Recommended Default)
+#### Claude Sonnet 4.5
 **Characteristics:**
-- 
-- 
-- 
+- **Core specialization**: Balanced multimodal assistant optimized for developer workflows — strong instruction-following, code help, and image-aware reasoning.
+- **Key capabilities**: Tool & plugin integration, long-context understanding (typical 200k, Max Mode 1M), robust step‑by‑step reasoning and summarization.
+- **Limitations & controls**: Can hallucinate on edge cases and is costlier for large outputs (Input $3 / Output $15 per M tokens); use system prompts, temperature, and retrieval/guardrails for safer, more deterministic results.
 
 **Best For:**
-- 
-- 
+- **Developer workflows & pair-programming**: code generation, reviews, refactoring, and debugging assistance.
+- **Long-context, multi-step reasoning**: design synthesis, summarization, and tasks that need large-context understanding.
+- **High‑quality summarization**: condensing long PRs, meeting notes, or technical docs into actionable summaries.
 
 **Performance:**
-- Speed: 
-- Cost: 
-- Context: 1M tokens
+- Speed: ?
+- Cost: Input - 3$ / Output - 15$ per million tokens
+- Context: 200k (Max Mode - 1M)
+- Capabilities: 🔌tools / 💡 thinking / 🌅 images
 
 **My Notes:**
-
+This model showed the best result when creating a project structure with linked links between files. 
+It works very well with a large context and produces an almost error-free result based on the context.
 
 ---
 
-#### Claude Opus 4 (Most Capable)
+#### Claude Opus 4.1.1 (Most Capable)
 **Characteristics:**
 - 
 - 
@@ -91,7 +94,7 @@ By the end of this step, I should be able to:
 
 ---
 
-#### Cursor Small (Fast & Light)
+#### Composer1 (Fast & Light)
 **Characteristics:**
 - 
 - 
@@ -180,9 +183,9 @@ I tested the same prompt with different models to compare results.
 | Model | Response Time | Quality | Notes |
 |-------|--------------|---------|-------|
 | Sonnet 4.5 | | | |
-| Opus 4 | | | |
+| Opus 4.1 | | | |
 | GPT-4o | | | |
-| Small | | | |
+| Composer1 | | | |
 
 **Learning:**
 
