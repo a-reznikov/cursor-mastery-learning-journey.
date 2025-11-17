@@ -78,21 +78,23 @@ It's too expensive. I need to think about how I can try this model in my work.
 
 #### GPT-4o (Alternative)
 **Characteristics:**
-- 
-- 
-- 
+- **Core specialization**: Low-latency, versatile conversational assistant optimized for interactive chat, real-time help, and user-facing experiences.
+- **Key capabilities**: Fast responses, strong instruction-following, effective at drafting, summarization, and everyday code help; good for short-to-medium context workflows.
+- **Limitations & controls**: Less suited for the deepest multi-step reasoning compared to top-tier models; use retrieval, system prompts, and sampling controls to improve factuality and consistency.
 
 **Best For:**
-- 
-- 
+- **Real‑time interactive assistants & customer-facing chat**: low‑latency conversational UX and in‑IDE helpers.
+- **Quick drafting, summarization & code help**: fast answers for short-to-medium prompts, PR summaries, and snippet generation.
+- **Frontend tooling & query augmentation**: search/chat overlays, RAG-enabled Q&A, and lightweight agent orchestration.
 
 **Performance:**
-- Speed: 
-- Cost: 
-- Context: 
+- Speed: ? 
+- Cost: Input - 2.5$ / Output - 10$ per million tokens
+- Context: 128k (Max mode -)
+- Capabilities: 🔌tools / 💡 thinking / 🌅 images
 
 **My Notes:**
-
+Check the speed of this model and how it works in daily tasks.
 
 ---
 
