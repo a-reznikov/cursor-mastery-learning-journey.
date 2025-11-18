@@ -100,21 +100,23 @@ Check the speed of this model and how it works in daily tasks.
 
 #### Composer1 (Fast & Light)
 **Characteristics:**
-- 
-- 
-- 
+- **Core specialization**: Lightweight, low‑latency assistant optimized for high‑throughput developer workflows — in‑IDE completions, quick refactors, and fast autocompletion.
+- **Key capabilities**: Very fast token throughput and low cost; excels at short‑to‑medium context code generation, concise summaries, and interactive assistant tasks.
+- **Limitations & controls**: Not designed for deep multi‑step reasoning or very long contexts; lower factual robustness on complex queries — use prompt engineering, conservative temperature, and retrieval/guardrails when needed.
 
 **Best For:**
 - 
 - 
 
 **Performance:**
-- Speed: 
+- Speed: ? (fast)
+- Cost: Input - 1.5$ / Output - 10$ per million tokens
 - Cost: 
-- Context: 
+- Context: 200k (Max mode -)
+- Capabilities: 🔌tools / 🌅 images
 
 **My Notes:**
-
+Good for fast refactoring and daily use; not ideal for complex multi‑step workflows.
 
 ---
 
