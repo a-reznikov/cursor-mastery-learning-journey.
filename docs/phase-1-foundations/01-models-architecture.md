@@ -128,16 +128,17 @@ Good for fast refactoring and daily use; not ideal for complex multi‑step work
 
 | Task Type | Recommended Model | Why |
 |-----------|-------------------|-----|
-| Daily coding | Composer1 | |
-| Autocomplete | | |
-| Complex architecture | | |
-| Quick refactoring | | |
-| Debugging complex issues | | | 
-| Writing tests | | |
-| Documentation | | |
+| Daily coding | Composer1 | Very fast, cheap, designed for writing code |
+| Autocomplete | GPT-5 Mini, Composer1 | cheap and fas t|
+| Complex architecture | Claude Sonnet 4.5 or Claude Opus 4.1| multi-steps with large context handling |
+| Quick refactoring |  Composer1 | fast and good at refactoring|
+| Debugging complex issues | Claude Sonnet 4.5 | better at multi-step debugging and context-heavy traces | 
+| Writing tests | add after writing tests| |
+| Documentation | Claude Sonnet 4.5 or Claude Opus 4.1 | this course was created with Sonnet 4.5 |
 
 **My Notes:**
-
+We should use cheaper models for everyday use (Composer1 or others).
+Claude Sonnet 4.5 is very good at programming, but it can be very expensive, we have to use it when cheaper models cannot solve the required task.
 
 ---
 
