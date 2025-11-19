@@ -3,7 +3,7 @@
 **Phase:** Foundations  
 **Date Started:** 17.11.25  
 **Date Completed:** ____  
-**Time Spent:** 1 hours
+**Time Spent:** 2.5 hours
 
 ---
 
@@ -17,7 +17,7 @@ Understanding the different AI models available in Cursor, their capabilities, p
 
 By the end of this step, I should be able to:
 
-- [ ] Explain the differences between Claude Sonnet 4.5, Opus 4.1, GPT-4o, and Composer1
+- [ ] Explain the differences between Claude Sonnet 4.5, Opus 4.1, GPT-5 Mini, and Composer1
 - [ ] Choose the appropriate model for different development tasks
 - [ ] Understand the performance vs capability trade-offs
 - [ ] Configure model selection in Cursor settings
@@ -52,6 +52,9 @@ By the end of this step, I should be able to:
 This model showed the best result when creating a project structure with linked links between files. 
 It works very well with a large context and produces an almost error-free result based on the context.
 
+**Prompt example**: Can you run multisteps (3 step) test answer? I want to check how it will be displayed on cursor dashboard.
+This can be very expensive in multistep mode, with each new step the context increases and the total number of tokens is not known (for example, the number of tokens reached 1M)
+
 ---
 
 #### Claude Opus 4.1 (Most Capable)
@@ -76,25 +79,25 @@ It's too expensive. I need to think about how I can try this model in my work.
 
 ---
 
-#### GPT-4o (Alternative)
+#### GPT-5 Mini (Cheap)
 **Characteristics:**
-- **Core specialization**: Low-latency, versatile conversational assistant optimized for interactive chat, real-time help, and user-facing experiences.
-- **Key capabilities**: Fast responses, strong instruction-following, effective at drafting, summarization, and everyday code help; good for short-to-medium context workflows.
-- **Limitations & controls**: Less suited for the deepest multi-step reasoning compared to top-tier models; use retrieval, system prompts, and sampling controls to improve factuality and consistency.
+- **Core specialization**: Compact, low‑latency assistant optimized for high‑throughput developer tooling and in‑IDE completions—fast, cost‑effective automation for routine tasks.
+- **Key capabilities**: Very fast token throughput and low cost; reliable short‑to‑medium context code completions, snippet generation, and interactive suggestions.
+- **Limitations & controls**: Modest context window and limited deep‑reasoning ability; not suited for long multi‑step workflows without retrieval/chaining—use conservative sampling and escalate to larger models when needed.
 
 **Best For:**
-- **Real‑time interactive assistants & customer-facing chat**: low‑latency conversational UX and in‑IDE helpers.
-- **Quick drafting, summarization & code help**: fast answers for short-to-medium prompts, PR summaries, and snippet generation.
-- **Frontend tooling & query augmentation**: search/chat overlays, RAG-enabled Q&A, and lightweight agent orchestration.
+- **In‑IDE/autocomplete & real‑time suggestions**: low‑latency completions, contextual code hints, and inline assistance.
+- **High‑throughput routine automation**: bulk refactors, test generation, lint fixes, and CI automation where cost and speed matter.
+- **Lightweight documentation & summarization**: PR summaries, commit messages, function docstrings, and short technical notes.
 
 **Performance:**
-- Speed: ? 
-- Cost: Input - 2.5$ / Output - 10$ per million tokens
-- Context: 128k (Max mode -)
+- Speed: ? (medium)
+- Cost: Input - 0,25$ / Output - 2$ per million tokens
+- Context: 272k (Max mode -)
 - Capabilities: 🔌tools / 💡 thinking / 🌅 images
 
 **My Notes:**
-Check the speed of this model and how it works in daily tasks.
+Well-suited for daily developer workflows: low‑latency autocompletion, ask mode.
 
 ---
 
@@ -111,7 +114,6 @@ Check the speed of this model and how it works in daily tasks.
 **Performance:**
 - Speed: ? (fast)
 - Cost: Input - 1.5$ / Output - 10$ per million tokens
-- Cost: 
 - Context: 200k (Max mode -)
 - Capabilities: 🔌tools / 🌅 images
 
@@ -126,11 +128,11 @@ Good for fast refactoring and daily use; not ideal for complex multi‑step work
 
 | Task Type | Recommended Model | Why |
 |-----------|-------------------|-----|
-| Daily coding | | |
+| Daily coding | Composer1 | |
 | Autocomplete | | |
 | Complex architecture | | |
 | Quick refactoring | | |
-| Debugging complex issues | | |
+| Debugging complex issues | | | 
 | Writing tests | | |
 | Documentation | | |
 
@@ -190,7 +192,7 @@ I tested the same prompt with different models to compare results.
 |-------|--------------|---------|-------|
 | Sonnet 4.5 | | | |
 | Opus 4.1 | | | |
-| GPT-4o | | | |
+| GPT-5 Mini | | | |
 | Composer1 | | | |
 
 **Learning:**
