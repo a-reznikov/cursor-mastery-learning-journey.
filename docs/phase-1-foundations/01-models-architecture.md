@@ -3,7 +3,7 @@
 **Phase:** Foundations  
 **Date Started:** 17.11.25  
 **Date Completed:** ____  
-**Time Spent:** 2.5 hours
+**Time Spent:** 6.5 hours
 
 ---
 
@@ -129,7 +129,7 @@ Good for fast refactoring and daily use; not ideal for complex multi‑step work
 | Task Type | Recommended Model | Why |
 |-----------|-------------------|-----|
 | Daily coding | Composer1 | Very fast, cheap, designed for writing code |
-| Autocomplete | GPT-5 Mini, Composer1 | cheap and fas t|
+| Autocomplete | GPT-5 Mini, Composer1 | cheap and fast |
 | Complex architecture | Claude Sonnet 4.5 or Claude Opus 4.1| multi-steps with large context handling |
 | Quick refactoring |  Composer1 | fast and good at refactoring|
 | Debugging complex issues | Claude Sonnet 4.5 | better at multi-step debugging and context-heavy traces | 
@@ -146,32 +146,82 @@ Claude Sonnet 4.5 is very good at programming, but it can be very expensive, we 
 
 **What is a Context Window?**
 
+A **context window** is the **maximum amount of text** (measured in tokens) that an **AI model can "see" and process at one time**. Think of it as the model's memory or working space for a single conversation or task.
 
-**1M Tokens = ?**
-- Approximately ___ words
-- Approximately ___ pages
-- In practice: 
+**Simple analogy**: If you were reading a book, your context window would be how many pages you can keep in your mind at once. A larger context window means the model can reference more previous messages, code files, or documentation simultaneously.
+
+
+**1 Token = ?**
+- Approximately _4_ characters
+- Approximately _0.75_ words
+
+**200k Token = ?**
+- Approximately _800k_ characters
+- Approximately _150k_ words
+
+
+**In practice**: 
+
+*Objective:** Understand tokens in practice by testing various texts with different tokenizers.
+
+**Available Tokenizer Tools:**
+1. **Skytells AI Token Counter** → https://www.skytells.ai/tools/tokenizer
+2. **Pinecone Tokenization Demo** → https://www.pinecone.io/learn/tokenization/
+3. **Tokenizers #3** → find it yourself
+4. **Tokenizers #4** → find it yourself
+
+**Test Texts (Count tokens for each):**
+
+| # | Sample Text | Tokens (Your Count) / (Tokenizers) | Notes |
+|---|---|---|---|
+| 1 | Hello, world! | _4/4_ | Simple greeting |
+| 2 | The quick brown fox jumps over the lazy dog | _10/10_ | Common phrase |
+| 3 | `def calculate_sum(a, b):\n    return a + b` | _10/11-13_ | Python code |
+| 4 | Your project's README section | _300/310_ | Real-world text |
+
+
+
 
 **Why Context Matters:**
+Context window size directly impacts the LLM's ability to understand and process information. A larger context window allows the model to "see" and reference more of your code, documentation, or conversation history at once. If you're working with large files or complex multi-step tasks, choosing a model with adequate context ensures the LLM won't lose critical information and can provide better, more accurate responses.
 
 
-**My Notes:**
+**My Notes:** 
 
+**_Key Insight:_** Context window and model thinking power are INDEPENDENT.
+
+- **Context Window** = How much text the model can see at once (storage capacity)
+- **Model Intelligence** = How well it reasons and understands (processing power)
+
+A model with a SMALLER context can be SMARTER than one with a LARGER context:
+- GPT-5 Mini (272k context) = Fast but simple reasoning
+- Sonnet 4.5 (200k context) = Smaller window but much deeper thinking
+
+Choose your model based on TASK COMPLEXITY, not just context size.
 
 ---
 
 ## 💡 Key Takeaways
 
-1. **[Takeaway 1]**
-   - 
-   - 
+1. **Model Selection Should Match Task Complexity, Not Just Specs**
+   - Use lightweight models (Composer1, GPT-5 Mini) for daily coding, autocomplete, and quick refactors
+   - Reserve powerful models (Claude Sonnet 4.5, Opus 4.1) for complex architecture, multi-step reasoning, and high-stakes work
 
-2. **[Takeaway 2]**
-   - 
-   - 
+2. **Cost-Performance Trade-offs Are Critical for Sustainable Development**
+   - Multi-step workflows, making costs unpredictable
+   - Smart model selection can reduce costs by 10-50x while maintaining quality for most tasks
+   - Start new conversations when previous context isn't needed — avoids paying for irrelevant conversation history tokens
 
-3. **[Takeaway 3]**
-   - 
+3. **Context Window ≠ Model Intelligence — Both Matter Independently**
+   - Context window = how much text the model can see at once (storage capacity)
+   - Model intelligence = reasoning depth and understanding quality (processing power)
+   - Example: Sonnet 4.5 (200k context) provides deeper reasoning than GPT-5 Mini (272k context) despite smaller window
+   
+
+4. **Cursor Rules Are Injected Into Every Request — Keep Them Minimal**
+   - ALL cursor rules are added to EVERY conversation, even for simple questions (can increase costs 10-100x for tiny queries)
+   - Keep rules concise (<2KB recommended) — every character consumes context tokens and costs money
+   - Use project docs (`@docs/conventions.md`) for detailed guidelines instead of bloated cursor rules
 
 ---
 
@@ -184,19 +234,39 @@ I tested the same prompt with different models to compare results.
 
 **Prompt Used:**
 ```
-[Your test prompt]
+I have a JavaScript array of user objects with 'name', 'email', and 'createdAt' properties.
+Write a function that filters out duplicate emails, sorts by creation date (newest first),
+and returns only the first 10 users. Make it readable and efficient.
+
+Create a new file at: solutions/phase-1/example-1/{model_name}_user_filter.js
+
+The file should include:
+1. Your complete solution with the function
+2. A comment at the top with your model name and the date
+3. Example usage showing how to call the function
+4. Comments explaining your approach
+
+Replace {model_name} with your actual model name (e.g., sonnet-4.5, opus-4.1, gpt-5-mini, composer1).
 ```
 
 **Results:**
 
-| Model | Response Time | Quality | Notes |
-|-------|--------------|---------|-------|
-| Sonnet 4.5 | | | |
-| Opus 4.1 | | | |
-| GPT-5 Mini | | | |
-| Composer1 | | | |
+| Model | Response Time | Tokens | Cost | Quality (0-10) | Notes |
+|-------|--------------|---------|-------|-------|-------|
+| Sonnet 4.5 | 41.44s | 54.2K | US$0.08 | 8 | Short, easy to read and understand. This solution doesn't validate email or date. |
+| Opus 4.5 | 37.9s | 66.7K | US$1.60 | 8 | Implemented by Claude 4.5 Opus. Cost calculation is approximate (assumes an 85% input / 15% output split). Same solution as Sonnet's. |
+| GPT-5 Mini | 1m 18s | 93K | US$0.04 | 8 | This solution is almost the same as Composer's, but is easier to read. |
+| Composer1 | 15.5s | 41.4K | US$0.02 | 7 | Difficult to read, but includes input validation and can handle different date formats. |
 
 **Learning:**
+
+Composer is the fastest (15.5s) and most cost-efficient ($0.02)—ideal for prototyping. All models produced working solutions with different trade-offs:
+
+- **Readability**: Sonnet 4.5 & Opus 4.5 → clean, nearly identical code
+- **Robustness**: GPT-5 Mini → good balance of clarity and input validation  
+- **Speed/Cost**: Composer1 → fast but denser code
+
+**Key insight:** Premium models (Opus) don't guarantee better results for simple algorithmic tasks. Use them for complex reasoning or architecture decisions. For standard transformations, Composer or smaller models are more cost-effective.
 
 
 ---
@@ -230,15 +300,60 @@ I tested the same prompt with different models to compare results.
 
 ## ⚠️ Challenges & Solutions
 
-### Challenge 1: [e.g., "Confused about when to use which model"]
+### Challenge 1: "Unexpected Bill Spike from Multi-Step Workflows"
 
 **Problem:**
-
+Started using Claude Sonnet 4.5 for a complex multi-step task (refactor → test → document), but noticed the final bill was 10-50x higher than expected. Each step added previous conversation context, causing token count to balloon unpredictably.
 
 **Solution:**
-
+- Start a **new conversation for each distinct phase** (refactoring, testing, documentation)
+- Use the decision matrix to select cheaper models (Composer1, GPT-5 Mini) for standalone tasks
+- Calculate context accumulation before multi-step workflows: multiply estimated tokens per step by 3-4x
+- For truly complex work, use streaming or retrieval-augmented approaches to avoid full context re-submission
 
 **Prevention:**
+- Monitor token usage in real-time during development
+- Set monthly budgets and track model spending by category
+- Create a `.cursorrules` guideline: "Use Composer1 for single refactors; only escalate to Sonnet for tasks requiring deep reasoning"
+- Review past conversations for unnecessary context carry-over before each new message
+
+---
+
+### Challenge 2: "Choosing Between Fast & Smart: Model Paralysis"
+
+**Problem:**
+Unsure whether to use Composer1 (fast, cheap) or Claude Sonnet 4.5 (slower, pricier) for a debugging task. Worry that Composer1 won't catch subtle bugs, but Sonnet 4.5 feels wasteful for simple issues.
+
+**Solution:**
+- **Start with Composer1** for initial issue reproduction and symptom gathering (1-2 turns)
+- If Composer1 identifies the root cause, stop there and save cost
+- **Escalate to Sonnet 4.5 only if**: the bug is multi-faceted, involves cross-file reasoning, or requires understanding edge cases
+- Use this decision tree: _Is the problem describable in under 500 tokens?_ → Composer1. _Does it require understanding 3+ files or historical context?_ → Sonnet 4.5
+
+**Prevention:**
+- Document decision thresholds in your team's `.cursorrules`
+- Test a few debugging scenarios with both models to build intuition for escalation
+- Set a rule: "Default to cheaper model; only escalate if stuck after 2 attempts"
+
+---
+
+### Challenge 3: "Hallucinations & Unreliable Outputs"
+
+**Problem:**
+Claude Sonnet 4.5 generated a "solution" that looked great but included non-existent API methods and incorrect logic. The code passed initial review but failed in testing. Felt misled by the model's confident tone.
+
+**Solution:**
+- **All models hallucinate**—treat model output as a first draft, not gospel
+- Use system prompts to add guardrails: "Only use methods from the provided API docs. Flag any uncertainty."
+- Request step-by-step reasoning: "Explain your approach before writing code"
+- Implement retrieval/documentation checks: reference actual API docs or code examples in your prompt
+- For high-stakes work (production code, architecture), use Sonnet 4.5 or Opus 4.1 with explicit verification steps
+
+**Prevention:**
+- Always test generated code before deploying
+- Pair AI-generated code reviews with human code review
+- Maintain a "trusted reference" doc for critical APIs/patterns and inject it into prompts
+- Use temperature settings wisely: lower temperature (0.3-0.5) for deterministic tasks, higher (0.7+) for creative work
 
 
 ---
@@ -246,23 +361,104 @@ I tested the same prompt with different models to compare results.
 ## ❓ Questions & Answers
 
 ### Q1: How do I know which model is currently active?
-**A:** 
+**A:** Check the **model selector dropdown** at the top of the Chat or Composer panel. The active model name is displayed there and in message headers. You can also see your default model in **Settings → Models**.
 
-**Source:** 
+**Source:** Cursor IDE Interface
 
 ---
 
 ### Q2: Can I switch models mid-conversation?
-**A:** 
+**A:** Yes, you can switch models at any point during a conversation using the model selector dropdown. When you switch:
+- **All previous messages remain visible** and are included in the context sent to the new model
+- **The new model takes over immediately** for subsequent messages
+- **Token usage increases** because the full conversation history gets resubmitted to the new model
+- **Each message shows which model generated it** in the message header
 
-**Source:** 
+This is useful for escalating from a cheaper/faster model (like Composer1) to a more capable model (like Sonnet 4.5) when you need deeper reasoning. However, be mindful of costs—longer conversations that switch models multiple times can accumulate significant token usage (see Challenge 1 above).
+
+**Source:** Cursor IDE behavior & practical testing 
 
 ---
 
 ### Q3: Which model should be default for my team?
 **A:** 
 
-**Source:** 
+**Recommendation: Composer1 as primary default, with strategic Sonnet 4.5 for complex tasks**
+
+**Team Context:** 8 developers × $20/developer = $160/month total budget
+
+For your Next.js frontend team with this budget constraint, here's the cost-optimized strategy:
+
+#### Primary Default: **Composer1** (Fast & Cost-Efficient)
+**Why it's the right choice at $160/month budget:**
+- **Cost**: $0.02-0.05 per query → ~1,600-4,000 queries/month team-wide
+- **Speed**: Fastest response time (15.5s) for in-IDE suggestions
+- **Good for 80% of daily work**: autocompletion, quick refactors, test generation, linting
+- **Adequate for React/TypeScript**: Example 1 shows Composer1 produces valid solutions (7/10 quality)
+- **Reliability**: While code is denser, it includes input validation and edge case handling
+
+**Use Composer1 for:**
+- ✅ In-IDE autocompletion and suggestions
+- ✅ Routine refactoring (renaming, formatting, simple restructuring)
+- ✅ Writing tests and lint fixes
+- ✅ Component updates and simple UI changes
+- ✅ PR summaries and commit messages
+- ✅ Boilerplate generation
+
+#### Secondary: **Claude Sonnet 4.5** (Selective High-Value Tasks)
+**Budget allocation:** ~$40/month per developer (~20% of queries)
+
+**Use ONLY for:**
+- 🎯 Complex architecture decisions
+- 🎯 Multi-file debugging involving 3+ files
+- 🎯 Performance optimization across components
+- 🎯 Critical production bugs
+- 🎯 Code review of complex logic
+
+**Decision Rule:** Try Composer1 first (max 2 attempts). If stuck, escalate to Sonnet 4.5.
+
+#### Avoid Completely at This Budget:
+- ❌ **Opus 4.1** ($1.60/query = 12 queries total/month team-wide)
+- ❌ **Long multi-step workflows** (costs balloon from context accumulation)
+
+#### Implementation for Your Team:
+
+```
+.cursorrules (suggested):
+Default model: Composer1
+Cost management:
+- Default: Composer1 for all daily tasks
+- Escalation: Use Sonnet 4.5 only after 2 failed Composer1 attempts
+- CRITICAL: Start fresh conversations to avoid context bloat
+- Track: Monitor spending monthly per developer
+
+Budget per developer: $20/month
+- ~$16/month on Composer1 (~320-800 queries)
+- ~$4/month on Sonnet 4.5 (~50 queries for complex work)
+```
+
+#### Monthly Budget Breakdown:
+| Model | Team Total | Per Dev | Query Budget |
+|-------|-----------|---------|--------------|
+| **Composer1 (80%)** | ~$128 | ~$16 | ~2,560 queries |
+| **Sonnet 4.5 (20%)** | ~$32 | ~$4 | ~400 queries |
+| **Total** | **$160** | **$20** | **~2,960 queries** |
+
+#### Quality Trade-offs at $160/month:
+- ✅ **Speed**: Composer1 is fastest
+- ✅ **Cost efficiency**: 8x cheaper than all-Sonnet
+- ⚠️ **Code readability**: Composer code is denser (but functional)
+- ⚠️ **Complex reasoning**: Limited for 5+ file refactors (escalate to Sonnet)
+- ⚠️ **Architecture decisions**: May need Sonnet for critical decisions
+
+#### Cost Optimization Tips:
+1. **Keep conversations short** → New conversation = reset context (saves tokens)
+2. **Use retrieval** → Paste relevant code snippets rather than asking model to find files
+3. **Bundle questions** → Group related queries into one message
+4. **Test locally first** → Reduce failed queries by testing ideas locally
+5. **IDE autocompletion** → Use built-in Cursor features before AI queries
+
+**Source:** Analysis based on your team constraints (8 developers, $20/dev/month = $160 total), tech stack (Next.js 15.3, React 19, TypeScript 5.8), and model comparison data (Example 1: rows 254-269)
 
 ---
 
