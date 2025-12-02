@@ -17,11 +17,11 @@ Understanding the different AI models available in Cursor, their capabilities, p
 
 By the end of this step, I should be able to:
 
-- [ ] Explain the differences between Claude Sonnet 4.5, Opus 4.1, GPT-5 Mini, and Composer1
-- [ ] Choose the appropriate model for different development tasks
-- [ ] Understand the performance vs capability trade-offs
-- [ ] Configure model selection in Cursor settings
-- [ ] Estimate costs and performance for each model
+- [x] Explain the differences between Claude Sonnet 4.5, Opus 4.1, GPT-5 Mini, and Composer1
+- [x] Choose the appropriate model for different development tasks
+- [x] Understand the performance vs capability trade-offs
+- [x] Configure model selection in Cursor settings
+- [x] Estimate costs and performance for each model
 
 ---
 
@@ -477,7 +477,7 @@ Rate your understanding (1-5 scale):
 - [ ] 1 - Need to review again
 - [ ] 2 - Basic understanding
 - [ ] 3 - Good understanding
-- [ ] 4 - Strong understanding
+- [x] 4 - Strong understanding
 - [ ] 5 - Expert level, can teach others
 
 **Confidence Level:** _4_/5
@@ -519,13 +519,13 @@ Rate your understanding (1-5 scale):
 
 Before moving to the next step:
 
-- [ ] All learning objectives completed
-- [ ] Tested all available models
-- [ ] Created comparison table
-- [ ] Documented decision criteria
-- [ ] Questions answered
-- [ ] Key takeaways summarized
-- [ ] Confidence level assessed
+- [x] All learning objectives completed
+- [x] Tested all available models
+- [x] Created comparison table
+- [x] Documented decision criteria
+- [x] Questions answered
+- [x] Key takeaways summarized
+- [x] Confidence level assessed
 
 ---
 
