@@ -2,8 +2,8 @@
 
 **Phase:** Foundations  
 **Date Started:** 17.11.25  
-**Date Completed:** ____  
-**Time Spent:** 6.5 hours
+**Date Completed:** 02.12.25  
+**Time Spent:** 8 hours
 
 ---
 
@@ -43,7 +43,7 @@ By the end of this step, I should be able to:
 - **High‑quality summarization**: condensing long PRs, meeting notes, or technical docs into actionable summaries.
 
 **Performance:**
-- Speed: ? (medium)
+- Speed: medium
 - Cost: Input - 3$ / Output - 15$ per million tokens
 - Context: 200k (Max Mode - 1M)
 - Capabilities: 🔌tools / 💡 thinking / 🌅 images
@@ -69,7 +69,7 @@ This can be very expensive in multistep mode, with each new step the context inc
 - **Expert-level technical writing**: high-quality docs, RFCs, proposals, and developer-facing tutorials with precise tone and structure.
 
 **Performance:**
-- Speed: ? (low)
+- Speed: low
 - Cost: Input - 15$ / Output - 75$ per million tokens
 - Context: - (Max mode 200k)
 - Capabilities: 🔌tools / 💡 thinking / 🌅 images
@@ -91,7 +91,7 @@ It's too expensive. I need to think about how I can try this model in my work.
 - **Lightweight documentation & summarization**: PR summaries, commit messages, function docstrings, and short technical notes.
 
 **Performance:**
-- Speed: ? (medium)
+- Speed: medium
 - Cost: Input - 0,25$ / Output - 2$ per million tokens
 - Context: 272k (Max mode -)
 - Capabilities: 🔌tools / 💡 thinking / 🌅 images
@@ -112,7 +112,7 @@ Well-suited for daily developer workflows: low‑latency autocompletion, ask mod
 - 
 
 **Performance:**
-- Speed: ? (fast)
+- Speed: fast
 - Cost: Input - 1.5$ / Output - 10$ per million tokens
 - Context: 200k (Max mode -)
 - Capabilities: 🔌tools / 🌅 images
@@ -249,14 +249,16 @@ The file should include:
 Replace {model_name} with your actual model name (e.g., sonnet-4.5, opus-4.1, gpt-5-mini, composer1).
 ```
 
+
+
 **Results:**
 
 | Model | Response Time | Tokens | Cost | Quality (0-10) | Notes |
 |-------|--------------|---------|-------|-------|-------|
-| Sonnet 4.5 | 41.44s | 54.2K | US$0.08 | 8 | Short, easy to read and understand. This solution doesn't validate email or date. |
-| Opus 4.5 | 37.9s | 66.7K | US$1.60 | 8 | Implemented by Claude 4.5 Opus. Cost calculation is approximate (assumes an 85% input / 15% output split). Same solution as Sonnet's. |
-| GPT-5 Mini | 1m 18s | 93K | US$0.04 | 8 | This solution is almost the same as Composer's, but is easier to read. |
-| Composer1 | 15.5s | 41.4K | US$0.02 | 7 | Difficult to read, but includes input validation and can handle different date formats. |
+| [Sonnet 4.5](../../solutions/phase-1/example-1/sonnet-4.5_user_filter.js) | 41.44s | 54.2K | US$0.08 | 8 | Short, easy to read and understand. This solution doesn't validate email or date. |
+| [Opus 4.5](../../solutions/phase-1/example-1/opus-4.5_user_filter.js) | 37.9s | 66.7K | US$1.60 | 8 | Implemented by Claude 4.5 Opus. Cost calculation is approximate (assumes an 85% input / 15% output split). Same solution as Sonnet's. |
+| [GPT-5 Mini](../../solutions/phase-1/example-1/gpt-5-mini_user_filter.js) | 1m 18s | 93K | US$0.04 | 8 | This solution is almost the same as Composer's, but is easier to read. |
+| [Composer1](../../solutions/phase-1/example-1/composer1_user_filter.js) | 15.5s | 41.4K | US$0.02 | 7 | Difficult to read, but includes input validation and can handle different date formats. |
 
 **Learning:**
 
@@ -268,33 +270,6 @@ Composer is the fastest (15.5s) and most cost-efficient ($0.02)—ideal for prot
 
 **Key insight:** Premium models (Opus) don't guarantee better results for simple algorithmic tasks. Use them for complex reasoning or architecture decisions. For standard transformations, Composer or smaller models are more cost-effective.
 
-
----
-
-### Example 2: Model Selection for Real Task
-
-**Scenario:**
-[Describe a real task you did]
-
-**Model Chosen:**
-
-
-**Why This Model:**
-
-
-**Result:**
-
-
-**Learning:**
-
-
----
-
-## ✅ What Worked Well
-
-- 
-- 
-- 
 
 ---
 
@@ -505,7 +480,7 @@ Rate your understanding (1-5 scale):
 - [ ] 4 - Strong understanding
 - [ ] 5 - Expert level, can teach others
 
-**Confidence Level:** ___/5
+**Confidence Level:** _4_/5
 
 **Notes on what to review:**
 - 
@@ -514,9 +489,28 @@ Rate your understanding (1-5 scale):
 
 ## 💭 Personal Notes & Insights
 
-[Your free-form notes, observations, connections, ideas, etc.]
+### Core Realizations
 
+1. **"Cheap by default, smart when stuck"** — Start with Composer1/GPT-5 Mini. Only escalate to Sonnet after 2 failed attempts. This alone can cut costs 10-50x.
 
+2. **Context ≠ Intelligence** — GPT-5 Mini has 272k context but shallow reasoning. Sonnet 4.5 has 200k but thinks deeper. Pick models by *task complexity*, not window size.
+
+3. **Multi-step = money trap** — Each step accumulates context. A 3-step Sonnet workflow can balloon to 1M tokens unexpectedly. Start fresh conversations between phases.
+
+4. **All models lie confidently** — Even Sonnet hallucinated non-existent APIs. Treat every output as draft code. Test everything. Trust nothing blindly.
+
+### What I Learned From Testing
+
+- **Sonnet 4.5** shines at large-context work (project structures, linked files). Almost error-free when given good context.
+- **Opus 4.1** is overkill for most tasks. Same quality as Sonnet for simple code at 20x the price.
+- **Composer1** is the workhorse — fastest (15.5s), cheapest ($0.02), handles 80% of daily coding. Denser code but includes validation.
+- **GPT-5 Mini** best for autocomplete and quick questions. Sweet spot of speed + cost.
+
+### Cost Survival Rules
+
+- **New chat = reset context = save tokens** — Don't carry irrelevant history.
+- **Keep `.cursorrules` under 2KB** — They're injected into EVERY request.
+- **Premium models don't guarantee premium results** — Opus and Sonnet produced identical code for the user filter task.
 
 
 ---
@@ -535,7 +529,7 @@ Before moving to the next step:
 
 ---
 
-**Status:** 🟡 In Progress
+**Status:** ✅ Completed
 
-**Last Updated:** ____
+**Last Updated:** 02.12.25
 

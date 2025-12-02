@@ -1,7 +1,7 @@
 # Step 1.2: Plans, Limits & Context Windows
 
 **Phase:** Foundations  
-**Date Started:** ____  
+**Date Started:** 01.12.25  
 **Date Completed:** ____  
 **Time Spent:** ___ hours
 
@@ -32,16 +32,19 @@ By the end of this step, I should be able to:
 #### Free Plan
 
 **Features:**
-- 
-- 
-- 
+- Try Cursor for free (trial period)
+- Basic tab completions
+- Access to test core features
 
 **Limitations:**
-- 
-- 
+- Limited requests compared to paid plans
+- No guaranteed API usage credits
+- Limited access to premium models
 
 **Good For:**
-- 
+- Evaluating Cursor before committing
+- Small personal projects
+- Learning the tool
 
 **My Notes:**
 
@@ -51,16 +54,24 @@ By the end of this step, I should be able to:
 #### Pro Plan ($20/month)
 
 **Features:**
-- 500 fast premium requests/month
-- Unlimited slow requests
-- 
-- 
+- Unlimited tab completions
+- Extended agent usage limits on all models
+- $20 of API agent usage + bonus usage per month
+- Access to Bugbot
+- Access to Cloud Agents
+- Roughly ~225 Sonnet 4.5 requests, ~550 Gemini requests, or ~500 GPT 5 requests
+- Auto mode (automatic model selection for best fit)
+- Max Mode available (longer reasoning, up to 1M token context)
 
 **Limitations:**
-- 
+- Usage charged at model inference API prices beyond included credits
+- When limit exceeded, must add on-demand usage or upgrade
 
 **Good For:**
-- 
+- Daily tab users (always stay within $20)
+- Limited agent users (often stay within $20)
+- Individual developers
+- Solo professionals
 
 **My Notes:**
 
@@ -70,18 +81,30 @@ By the end of this step, I should be able to:
 #### Business Plan (Custom Pricing)
 
 **Features:**
-- Everything in Pro
-- Centralized billing
-- Admin dashboard
-- 
-- 
+- **Teams Plan ($40/user/month):**
+  - Everything in Pro
+  - Centralized team billing
+  - Admin Dashboard with usage stats
+  - Privacy Mode enforcement
+  - SAML/OIDC SSO
+  
+- **Enterprise Plan (Custom):**
+  - Everything in Teams
+  - Priority support
+  - Pooled usage across team
+  - Invoicing
+  - SCIM provisioning
+  - Advanced security controls
 
 **Additional Benefits:**
-- 
-- 
+- Centralized management and oversight
+- Usage tracking across team members
+- Enhanced security and compliance features
+- Dedicated support channels (Enterprise)
 
 **Good For:**
-- 
+- Teams: Self-serving customers, small to medium development teams
+- Enterprise: Large organizations needing priority support, advanced security, pooled usage, custom contracts
 
 **My Notes:**
 
