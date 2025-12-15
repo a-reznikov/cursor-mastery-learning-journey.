@@ -1,0 +1,58 @@
+---
+alwaysApply: true
+---
+# Git Commit Message Rules
+
+## Format
+```
+<type>: <short description>
+```
+
+## Rules
+- Maximum 72 characters (aim for 50, but clarity is more important)
+- Use imperative mood ("Add feature" not "Added feature")
+- Capitalize first letter only
+- No period at the end
+- Format: `type: description`
+
+## Conventional Commit Types
+- `feat:` - New features
+- `fix:` - Bug fixes
+- `docs:` - Documentation changes
+- `style:` - Code formatting, semicolons, etc.
+- `refactor:` - Code refactoring without functional changes
+- `perf:` - Performance improvements
+- `test:` - Adding or updating tests
+- `chore:` - Maintenance tasks, dependency updates
+- `ci:` - CI/CD changes
+- `build:` - Build system changes
+- `revert:` - Reverting previous commits
+
+## Examples
+
+### Good
+```
+feat: add OAuth2 login support with Google and GitHub
+fix: resolve button alignment issue in mobile view
+refactor: extract user validation logic into separate utilities
+chore: update dependencies and fix security vulnerabilities
+docs: update API documentation with new endpoints
+style: fix code formatting and remove unused imports
+test: add comprehensive unit tests for authentication module
+perf: optimize image loading with lazy loading and compression
+```
+
+### Bad
+```
+Updated stuff
+Fixed the thing
+Added features and fixed bugs
+Update expert icons SVG files and constants for consistent dimensions
+```
+
+## Best Practices
+- **Atomic commits:** One logical change per commit
+- **Present tense:** "Add feature" not "Added feature"
+- **Be specific:** "Fix login bug" not "Fix bug"
+- **Keep it simple:** Don't over-explain obvious changes
+- **One line only:** No body or footer needed

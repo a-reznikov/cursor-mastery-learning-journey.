@@ -1,0 +1,77 @@
+COMPONENT STRUCTURE AND ORGANIZATION
+
+This rule defines how to structure and organize React components in the project.
+
+1. EXPORT PATTERN
+
+- No default exports in components - always use named exports
+- Define each component as export const [ComponentName]: React.FC<Props> or export const [ComponentName]: React.FC if no props
+- Use arrow function body style (implicit return) when the component only returns JSX: () => ( ... ) instead of () => { return ... }
+
+2. FILE AND FOLDER ORGANIZATION
+
+- Each component has its own folder
+- Each file should have 1 component
+- File name = exported component name (e.g., Layout.tsx exports Layout)
+- If splitting a component into smaller sub-components, create a components folder inside
+
+3. DIRECTORY STRUCTURE
+
+Component Directories (Nextjs)
+
+- src/components/common - shared components between pages
+- src/components/[component-name]/components - sub-components for specific component
+
+Page Directories
+
+App Router:
+- src/app/[locale]/[route-name]/page.tsx → exports [RouteNamePage]
+
+Pages Router:
+- src/pages/[route-name].tsx → default export [RouteNamePage]
+- src/pages/[route-name]/index.tsx → alternative folder-based structure
+
+Note: Pages Router requires default exports, which is an exception to the named export rule.
+
+4. PROPS DEFINITION
+
+- Use type Props to define component props
+- Order props in the following sequence:
+  1. Required props first
+  2. Optional props next
+  3. Function props last
+
+5. EXAMPLES
+
+Props Definition
+
+type Props = {
+  requiredName: string;
+  requiredId: number;
+  optionalDescription?: string;
+  optionalClassName?: string;
+  onClick: () => void;
+  onSubmit?: (data: DataType) => void;
+};
+
+Component with Props
+
+type Props = {
+  title: string;
+  className?: string;
+  onClick: () => void;
+};
+
+export const Button: React.FC<Props> = ({ title, className, onClick }) => (
+  <button className={className} onClick={onClick}>
+    {title}
+  </button>
+);
+
+Component without Props
+
+export const Logo: React.FC = () => (
+  <div className="logo">
+    <img src="/logo.svg" alt="Logo" />
+  </div>
+);

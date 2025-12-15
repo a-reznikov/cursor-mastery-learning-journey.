@@ -1,0 +1,113 @@
+CLASSNAMES USAGE AND CONVENTIONS
+
+This rule defines how to use the classNames package and order Tailwind CSS classes in the project.
+
+1. COMPONENT PROPS PATTERN
+
+- Import classNames from 'classnames' at the top of the file with other third-party imports
+- The className prop should be optional (className?: string)
+- Merge consumer className at the end: className={classNames('default classes', className)}
+
+2. BREAKPOINT ORDER (MOBILE-FIRST)
+
+Classes must be ordered from smallest to largest screen size:
+
+1. Base styles (no prefix) - applies to all screen sizes
+2. xs: → s: → sm: → md: → m: → lg: → xl: → 2xl:
+
+Note: Always verify actual breakpoint names and values from the project's tailwind.config file - they may differ from the example above.
+
+3. CLASS ORGANIZATION
+
+- Group classes by breakpoint in separate strings
+- Keep related styles together within each breakpoint group
+- Order utility classes logically: layout → spacing → typography → colors → effects
+- No trailing commas after the last className argument
+
+4. EXAMPLES
+
+Basic Breakpoint Ordering
+
+className={classNames(
+  'base-style-1 base-style-2',
+  'xs:xs-style-1 xs:xs-style-2',
+  's:s-style-1 s:s-style-2',
+  'sm:sm-style-1 sm:sm-style-2',
+  'md:md-style-1 md:md-style-2',
+  'm:m-style-1 m:m-style-2',
+  'lg:lg-style-1 lg:lg-style-2',
+  'xl:xl-style-1 xl:xl-style-2',
+  '2xl:2xl-style-1 2xl:2xl-style-2'
+)}
+
+Conditional Classes and Passed className Prop
+
+type Props = {
+  className?: string;
+  size?: ButtonSize;
+  variant?: ButtonVariant;
+};
+
+const Button = ({ children, size = ButtonSize.MEDIUM, variant = ButtonVariant.PRIMARY, className, ...props }) => (
+  <button
+    className={classNames(
+      'block rounded-lg text-center transition',
+      'disabled:opacity-50',
+      { 'px-3 py-2 text-sm-medium': size === ButtonSize.SMALL },
+      { 'px-4 py-3 text-md-medium': size === ButtonSize.MEDIUM },
+      { 'bg-orange-500 text-white hover:bg-orange-700': variant === ButtonVariant.PRIMARY },
+      { 'outline outline-gray-500 hover:text-orange-500': variant === ButtonVariant.SECONDARY },
+      { 'pointer-events-none': Boolean(props?.disabled) },
+      className
+    )}
+    type="button"
+    {...props}
+  >
+    {children}
+  </button>
+);
+
+Multiple className Props for Sub-elements
+
+type Props = {
+  title: ReactNode;
+  children: ReactNode;
+  className?: string;
+  headerClassName?: string;
+  contentClassName?: string;
+};
+
+export const Card: React.FC<Props> = ({
+  title,
+  children,
+  className,
+  headerClassName,
+  contentClassName,
+}) => (
+  <div className={classNames('rounded-lg border', className)}>
+    <div className={classNames('border-b p-4', headerClassName)}>{title}</div>
+    <div className={classNames('p-4', contentClassName)}>{children}</div>
+  </div>
+);
+
+Shared Styles
+
+const Buttons = () => {
+  const buttonClassName = classNames(
+    'flex w-full shrink-0 items-center justify-center transition-colors',
+    'lg:cursor-pointer'
+  );
+
+  return (
+    <div className="flex flex-col gap-3">
+      <button className={classNames(buttonClassName, 'button-primary')}>
+        {/* Content */}
+      </button>
+
+      <button className={classNames(buttonClassName, 'button-secondary')}>
+        {/* Content */}
+      </button>
+    </div>
+  );
+};
+
