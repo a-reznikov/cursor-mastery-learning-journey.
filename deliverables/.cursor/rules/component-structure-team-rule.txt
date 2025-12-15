@@ -10,19 +10,32 @@ This rule defines how to structure and organize React components in the project.
 
 2. FILE AND FOLDER ORGANIZATION
 
+Naming Conventions
+
+- Folder names: kebab-case (e.g., card-content, button-group, modal-header)
+- File names: PascalCase (e.g., CardContent.tsx, ButtonGroup.tsx, ModalHeader.tsx)
+- Component exports: Match file name (e.g., CardContent.tsx exports CardContent)
+
+Structure Rules
+
 - Each component has its own folder
 - Each file should have 1 component
-- File name = exported component name (e.g., Layout.tsx exports Layout)
-- If splitting a component into smaller sub-components, create a components folder inside
+- If splitting a component into smaller sub-components, create a components folder inside the parent component's folder
 
 3. DIRECTORY STRUCTURE
 
-Component Directories (Nextjs)
+Component Directories
 
 - src/components/common - shared components between pages
-- src/components/[component-name]/components - sub-components for specific component
+- src/components/[component-name] - main component folder (kebab-case)
+  - [ComponentName].tsx - main component file (PascalCase)
+  - components/ - sub-components folder (if component has sub-components)
+    - [sub-component-name]/ - sub-component folder (kebab-case)
+      - [SubComponentName].tsx - sub-component file (PascalCase)
+    - [another-sub-component-name]/ - another sub-component folder
+      - [AnotherSubComponentName].tsx - another sub-component file
 
-Page Directories
+Page Directories (Nextjs)
 
 App Router:
 - src/app/[locale]/[route-name]/page.tsx → exports [RouteNamePage]
