@@ -11,8 +11,8 @@ Extract selected code into a new child component following project conventions a
 - [ ] Identify any dependencies (imports, hooks, etc.)
 
 2. **Create the new component**
-- [ ] Follow component structure from `.cursor/rules/component-structure.mdc`
-- [ ] Apply className conventions from `.cursor/rules/classnames-conventions.mdc`
+- [ ] Follow component structure rule
+- [ ] Apply className conventions rule
 - [ ] Use named exports with arrow function syntax
 - [ ] Define proper TypeScript types for props
 
