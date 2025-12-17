@@ -649,7 +649,7 @@ When you've used all $20 of included API credits (shows "US$20 / US$20"):
 
 ## 📦 Deliverables Created
 
-- [ ] Plan comparison table → Path: `[to be added to team docs]`
+- [x] Plan comparison table → [📊 View Document](../../deliverables/phase-1-foundations/plan-comparison.md)
 - [ ] Team budget proposal → Path: `[budget proposal doc]`
 - [ ] Usage monitoring guide → Path: `[team guide]`
 
@@ -673,10 +673,10 @@ Rate your understanding (1-5 scale):
 - [ ] 1 - Need to review again
 - [ ] 2 - Basic understanding
 - [ ] 3 - Good understanding
-- [ ] 4 - Strong understanding
-- [x] 5 - Expert level, can teach others
+- [x] 4 - Strong understanding
+- [] 5 - Expert level, can teach others
 
-**Confidence Level:** 5/5
+**Confidence Level:** 4/5
 
 **Notes on what to review:**
 - 
@@ -698,13 +698,13 @@ Rate your understanding (1-5 scale):
 
 Before moving to the next step:
 
-- [ ] All learning objectives completed
-- [ ] Plan comparison documented
-- [ ] Token usage understood
-- [ ] Budget calculated for team
-- [ ] Rate limit strategies identified
-- [ ] Questions answered
-- [ ] Key takeaways summarized
+- [x] All learning objectives completed
+- [x] Plan comparison documented
+- [x] Token usage understood
+- [x] Budget calculated for team
+- [x] Rate limit strategies identified
+- [x] Questions answered
+- [x] Key takeaways summarized
 
 ---
 
