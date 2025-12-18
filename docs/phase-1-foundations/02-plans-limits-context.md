@@ -3,7 +3,7 @@
 **Phase:** Foundations  
 **Date Started:** 01.12.25  
 **Date Completed:** ____  
-**Time Spent:** ___ hours
+**Time Spent:** _4_ hours
 
 ---
 

@@ -1,7 +1,7 @@
 # Step 1.3: Core Settings & Configuration
 
 **Phase:** Foundations  
-**Date Started:** ____  
+**Date Started:** _18.12.25_  
 **Date Completed:** ____  
 **Time Spent:** ___ hours
 
@@ -31,57 +31,76 @@ By the end of this step, I should be able to:
 
 **Where to Configure:**
 ```
-Cursor → Settings → Cursor Settings → Features
+Cursor → Settings → Cursor Settings → Models
 ```
 
-#### Chat (Cmd+L / Ctrl+L)
+#### Chat (Cmd+L / Cmd+I)
 
 **My Configuration:**
-- Model: 
-- Why: 
+- Model: Composer 1 for easy tasks, Haiku 4.5 for simple but creative tasks, Sonnet 4.5 for difficult tasks
+- Why: Composer is quick and efficient for straightforward work. Haiku 4.5 offers a good balance between speed and capability, ideal for creative tasks. Sonnet excels with large context windows and complex planning scenarios.
 
-**Settings:**
 ```
-[Screenshot or description of settings]
-```
-
+Note: If I select something and then use Cmd+L / Cmd+I, it will add the selected code to chat.
 ---
 
 #### Cmd+K (Inline Edit)
 
 **My Configuration:**
-- Model: 
-- Why: 
+- Model: Auto.
+- Why: Currently, I only see one available model (GPT-4.1) for this feature.
 
 **Settings:**
 ```
-[Settings details]
+Default
 ```
 
 ---
 
-#### Composer (Cmd+Shift+I)
+#### Agent Mode (Cmd+E)
+
+**How to activate:**  
+- Keyboard shortcut: **Cmd E** (or Cmd . to open Mode Menu)
+- This toggles the Agent layout, which provides advanced AI assistance for complex tasks
+
+**How to see if Agent Mode is active:**
+- Press **Cmd .** to open Mode Menu—you'll see "Agent" highlighted/selected
+- Look at the chat panel header—should show "Agent" mode indicator
+- When active, the AI will execute commands automatically (you'll see terminal output in responses)
+
+**Why use Agent Mode:**
+- AI can execute terminal commands automatically (run tests, install packages, etc.)
+- Can create/edit multiple files in sequence without asking permission each time
+- Better for complex, multi-step tasks (setup projects, debugging, refactoring)
+- **Note:** The UI looks similar to Chat mode—the difference is that Agent Mode can *do* things (run commands, modify files) rather than just *suggest* code
 
 **My Configuration:**
-- Model: 
-- Why: 
+- Model:
+- Why:
 
 **Settings:**
 ```
-[Settings details]
+Default
 ```
 
 ---
 
-#### Copilot++ (Autocomplete)
+#### New Chat
+
+**How to create a new chat:**
+- When **focused on the chat tab**: Press `Cmd N` or `Cmd R` to create a new chat
+- When **focused on a file/editor**: Press `Cmd Shift I` to open a new chat with the file context
+
+**What this does:**  
+Opens a brand new chat session in Cursor for a fresh conversation (context-dependent based on focus).
 
 **My Configuration:**
-- Model: 
-- Why: 
+- Model:
+- Why:
 
 **Settings:**
 ```
-[Settings details]
+Default
 ```
 
 ---
@@ -176,12 +195,15 @@ Settings → Cursor Settings → Features → Codebase Indexing
 
 | Shortcut | Action | Notes |
 |----------|--------|-------|
-| `Cmd+L` / `Ctrl+L` | Open Chat | |
-| `Cmd+K` / `Ctrl+K` | Inline Edit | |
-| `Cmd+Shift+I` | Composer | |
-| `Cmd+/` | Toggle AI | |
-| `Cmd+Enter` | Submit prompt | |
-| `Escape` | Close AI panels | |
+| `Cmd+L` / `Cmd+I` | Open Chat (Sidepanel) | |
+| `Cmd+K` | Inline Edit | |
+| `Cmd+E` | Toggle Agent Layout | Main AI mode |
+| `Cmd+.` | Open Mode Menu | Cycle through modes |
+| `Cmd+N` / `Cmd+R` | New Chat | Fresh chat session |
+| `Cmd+/` | Loop between AI models | |
+| `Cmd+Return` | Submit/Send message | |
+| `Cmd+Shift+Backspace` | Cancel generation | |
+| `Escape` | Unfocus/Close | |
 | `Cmd+Shift+P` | Command palette | |
 
 **Custom Shortcuts I Added:**
