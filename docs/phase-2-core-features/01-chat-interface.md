@@ -1,7 +1,7 @@
 # Step 2.1: Chat Interface (Cmd+L / Ctrl+L)
 
 **Phase:** Core AI Features  
-**Date Started:** ____  
+**Date Started:** _23.12.25_  
 **Date Completed:** ____  
 **Time Spent:** ___ hours
 
@@ -30,14 +30,16 @@ By the end of this step, I should be able to:
 ### Topic 1: Chat Interface Basics
 
 **How to Open Chat:**
-- Keyboard shortcut: 
-- Where it appears: 
-- How to close: 
+- Keyboard shortcut: Cmd+I/Cmd+L
+- Where it appears: aside
+- How to close: Cmd+I/Cmd+L
 
 **What Chat is Good For:**
-- 
-- 
-- 
+- Asking questions about your code
+- Understanding how things work
+- Planning what to build
+- Debugging problems
+- Learning new stuff
 
 **My Notes:**
 
@@ -54,11 +56,15 @@ By the end of this step, I should be able to:
 ```
 
 **When to Use:**
-- 
+- Pointing to similar code you want to emulate
+- Asking about a specific file
+- Needing context from one particular file
 
 **Examples I Tried:**
 ```
-[Your examples]
+@README.md please find link to cursor privacy
+
+Used @Files to reference README.md, then asked to find and verify the Cursor privacy link. This gave me context from the file while asking a specific question.
 ```
 
 **My Notes:**
@@ -74,11 +80,15 @@ By the end of this step, I should be able to:
 ```
 
 **When to Use:**
-- 
+- Giving Cursor better understanding of project structure
+- Working on changes that span multiple files
+- Needing broader context about a directory
 
 **Examples I Tried:**
 ```
-[Your examples]
+@folders/phase-2-core-features/ please look through this folder and show me all files with its sizes here.
+
+Used @Folders to reference the entire directory, then asked to list all files with their sizes. Got a complete overview of the folder contents (5 files, ~21.8KB total).
 ```
 
 **My Notes:**
@@ -95,15 +105,19 @@ By the end of this step, I should be able to:
 ```
 
 **When to Use:**
-- 
+- Asking about a specific function or class
+- Understanding how something works
+- Modifying existing code
 
 **Examples I Tried:**
 ```
-[Your examples]
+@filterAndSortUsers what is the use of this function?
+
+Used @Code to reference the filterAndSortUsers function directly, then asked about its usage. Got a clear explanation of what the function does, its parameters, return value, and example usage.
 ```
 
 **My Notes:**
-
+When I typed @filterAndSortUsers into chat, there was no autocomplete suggestion, but the model still found and understood the function correctly. So @Code mentions work even without autocomplete.
 
 ---
 
@@ -115,11 +129,15 @@ By the end of this step, I should be able to:
 ```
 
 **When to Use:**
-- 
+- Looking up how Cursor features work
+- Finding syntax or usage examples
+- Learning about Cursor capabilities
 
 **Examples I Tried:**
 ```
-[Your examples]
+@docs NextJS please look at this documentation and find example of using middleware in nextjs app router 16.
+
+Used @Docs to search for Next.js 16 middleware documentation. Got accurate information that Next.js 16 uses proxy.ts instead of middleware.ts, along with code examples showing how to implement it. Excellent result - found current documentation and practical examples.
 ```
 
 **My Notes:**
@@ -129,20 +147,30 @@ By the end of this step, I should be able to:
 
 #### @Web - Search the Web
 
-**Syntax:**
-```
-@web [search query]
-```
+**⚠️ Deprecated in Cursor 2.0**
 
-**When to Use:**
-- 
+**Status:** @Web has been removed in Cursor 2.0. The agent can now automatically search the web without needing the @Web mention.
+
+**What Changed:**
+- Cursor 2.0 removed @Web, @Definitions, @Link, @Recent Changes, @Linter Errors, and others
+- Agent can now self-gather context automatically
+- Just ask directly instead of using @Web
+
+**How to Use Now:**
+Instead of: `@web latest React features`
+Just ask: `What are the latest React features?` or `Search for latest React documentation`
 
 **Examples I Tried:**
 ```
-[Your examples]
+Checked if @Web is available in latest Cursor version. Found that @Web was removed in Cursor 2.0 - agent now searches web automatically without needing @Web mention.
 ```
 
 **My Notes:**
+Important lesson: When I asked to check if @Web is available and provided Cursor docs, the AI initially said @Web was available. However, after I showed the updated changelog documentation, it became clear that @Web was removed in Cursor 2.0. This shows the importance of:
+- Checking documentation version/date
+- Verifying information against latest changelogs
+- Not assuming all documentation is current
+- The AI can make mistakes even when given documentation - always verify!
 
 
 ---
@@ -158,48 +186,50 @@ By the end of this step, I should be able to:
 
 | Bad Prompt | Good Prompt | Why Better |
 |------------|-------------|------------|
-| | | |
-| | | |
+| "fix this" | `@README.md please find link to cursor privacy` | Provides context (@-mention) and specific task |
+| "how does this work?" | `@filterAndSortUsers what is the use of this function?` | References specific code and asks clear question |
+| "show me files" | `@docs/phase-2-core-features/ please look through this folder and show me all files with its sizes here.` | Uses @Folders for context, specifies what info needed |
+| "check if feature exists" | `@docs NextJS please look at this documentation and find example of using middleware in nextjs app router 16.` | Uses @Docs, specifies version and what to find |
+| "what's wrong?" | `@composer1_user_filter.js The function isn't handling null emails correctly. Can you fix it?` | Provides file context and describes specific issue |
+
+**Key Principles:**
+- **Use @-mentions** to provide context (@Files, @Folders, @Code, @Docs)
+- **Be specific** about what you need (version numbers, file paths, expected output)
+- **Describe the problem** clearly, not just "fix it"
+- **Include constraints** if needed (e.g., "for Next.js 16", "without breaking existing code")
+- **Ask follow-up questions** if the answer isn't clear
 
 **My Notes:**
 
 
 ---
 
-### Topic 4: Context Management
+### Topic 4: Chat vs Cmd+K vs Composer
 
-**What is Context?**
-
-
-**How Context Works:**
-- 
-- 
-
-**Managing Context Effectively:**
-1. 
-2. 
-3. 
-
-**When to Clear Context:**
-- 
-
-**My Notes:**
-
-
----
-
-### Topic 5: Chat vs Cmd+K vs Composer
-
-**When to Use Chat:**
-- 
-- 
-- 
+**When to Use Chat (Cmd+L / Cmd+I):**
+- Asking questions about your codebase
+- Understanding how code works
+- Getting explanations and learning
+- Planning what to build
+- Debugging problems
+- Single questions or discussions
 
 **When NOT to Use Chat:**
-- (Use Cmd+K instead when:)
-- (Use Composer instead when:)
+- **Use Cmd+K instead when:** You need quick, inline edits to a single file or small code section
+- **Use Composer (Cmd+Shift+I) instead when:** You need to make changes across multiple files, implement complete features, or do complex refactoring
 
 **My Notes:**
+⚠️ **DISCREPANCY FOUND:** When testing Cmd+Shift+I, it opens a new chat (same as Cmd+L/Cmd+I), not a separate "Composer" mode. The documentation claims Composer exists and uses Cmd+Shift+I, but in practice:
+- Cmd+Shift+I = Opens new chat (same as Cmd+L/Cmd+I)
+- Cmd+L = Opens new chat
+- Cmd+I = Opens new chat
+
+**Question:** Does Composer mode actually exist as a separate feature? Or is it accessed differently (e.g., through Mode Menu with Cmd+.)? Need to verify:
+1. Check Mode Menu (Cmd+.) for available modes
+2. Check Cursor Settings → Keyboard Shortcuts for Composer-related commands
+3. Verify Cursor version - Composer might be a newer feature or might not exist
+
+**Current understanding:** All three shortcuts (Cmd+L, Cmd+I, Cmd+Shift+I) appear to open the same Chat interface. For multi-file changes, Chat can still be used with @-mentions to reference multiple files.
 
 
 ---
