@@ -2,8 +2,8 @@
 
 **Phase:** Core AI Features  
 **Date Started:** _23.12.25_  
-**Date Completed:** ____  
-**Time Spent:** ___ hours
+**Date Completed:** _26.12.25_  
+**Time Spent:** _3_ hours
 
 ---
 
@@ -231,23 +231,6 @@ Important lesson: When I asked to check if @Web is available and provided Cursor
 
 **Current understanding:** All three shortcuts (Cmd+L, Cmd+I, Cmd+Shift+I) appear to open the same Chat interface. For multi-file changes, Chat can still be used with @-mentions to reference multiple files.
 
-
----
-
-## 💡 Key Takeaways
-
-1. **[@-Mentions are Powerful]**
-   - 
-   - 
-
-2. **[Context is Key]**
-   - 
-   - 
-
-3. **[Good Questions = Good Answers]**
-   - 
-   - 
-
 ---
 
 ## 🔍 Practical Examples
@@ -255,18 +238,26 @@ Important lesson: When I asked to check if @Web is available and provided Cursor
 ### Example 1: Asking About My Codebase
 
 **Scenario:**
-[What I wanted to learn]
+Finding all documentation about keyboard shortcuts in my learning repository
 
 **Prompt Used:**
 ```
-[Your actual prompt with @-mentions]
+@deliverables/phase-1-foundations/keyboard-shortcuts-cheatsheet.md Where can I find information about keyboard shortcuts? Show me all relevant files.
 ```
 
 **Response Quality:**
-- Helpful: Yes/No
-- Why: 
+- Helpful: Yes
+- Why: Found 7 relevant files across the codebase, including the main cheatsheet, documentation files that reference shortcuts, and learning plan files. The response was comprehensive and organized.
 
 **What I Learned:**
+- Chat can search across the entire codebase to find related information
+- Using @Files provides context while asking a broader question
+- Multiple files contain keyboard shortcut information:
+  1. Main cheatsheet: `deliverables/phase-1-foundations/keyboard-shortcuts-cheatsheet.md`
+  2. Settings documentation: `docs/phase-1-foundations/03-settings-configuration.md` (Topic 5)
+  3. Feature-specific docs mention shortcuts in their titles and content
+  4. Learning plan and index files reference shortcuts
+- This demonstrates how Chat helps understand project organization and find related documentation
 
 
 ---
@@ -274,93 +265,91 @@ Important lesson: When I asked to check if @Web is available and provided Cursor
 ### Example 2: Using Multiple @-Mentions
 
 **Scenario:**
-[Complex question requiring multiple files]
+Understanding how the learning plan maps to the actual documentation structure and verifying all phases and steps are documented
 
 **Prompt Used:**
 ```
-[Your prompt]
+@LEARNING_PLAN.md @INDEX.md How does the learning plan map to the actual documentation structure? Are all phases and steps documented?
 ```
 
 **Files Referenced:**
-- @file1
-- @file2
+- @LEARNING_PLAN.md
+- @INDEX.md
 
 **Result:**
+Perfect 1:1 mapping confirmed! All 24 steps from LEARNING_PLAN.md are documented in INDEX.md:
+- Phase 1: 3 steps (1.1-1.3) ✅
+- Phase 2: 4 steps (2.1-2.4) ✅
+- Phase 3: 4 steps (3.1-3.4) ✅
+- Phase 4: 7 steps (4.1-4.7) ✅
+- Phase 5: 3 steps (5.1-5.3) ✅
+- Phase 6: 3 steps (6.1-6.3) ✅
 
+**Relationship discovered:**
+- LEARNING_PLAN.md = Curriculum reference (what to learn, topics, deliverables)
+- INDEX.md = Progress tracker & navigation (links to docs, completion status)
 
 **Learning:**
-
-
----
-
-### Example 3: Debugging with Chat
-
-**Scenario:**
-[Bug or error I encountered]
-
-**Prompt Used:**
-```
-[Your debugging prompt]
-```
-
-**How Chat Helped:**
-
-
-**Resolution:**
-
-
----
-
-## ✅ What Worked Well
-
-- 
-- 
-- 
-
----
-
-## ⚠️ Challenges & Solutions
-
-### Challenge 1: [e.g., "Chat gave generic answers"]
-
-**Problem:**
-
-
-**Solution:**
-
-
-**Prevention:**
-
+- Using multiple @-mentions allows comparing and cross-referencing related files
+- Chat can analyze the relationship between two documents and verify completeness
+- This demonstrates how @Files can be used together to understand project structure
+- The response confirmed perfect mapping, giving confidence in documentation organization
+- Multiple @-mentions provide richer context than single file references
 
 ---
 
 ## ❓ Questions & Answers
 
 ### Q1: How do I know what files are available for @-mention?
-**A:** 
+**A:** Type `@` in Chat and you'll see autocomplete suggestions showing available files, folders, and code symbols. Files must be indexed by Cursor (check Settings → Indexing). You can also type `@filename.ext` directly even without autocomplete - Cursor will find it if it's in your codebase.
 
-**Source:** 
+**Source:** Personal testing - @Code mentions work even without autocomplete (see Topic 2 notes) 
 
 ---
 
 ### Q2: Can I reference multiple files in one prompt?
-**A:** 
+**A:** Yes! Use multiple @-mentions in the same prompt: `@file1.md @file2.md How do these files relate?` Chat will analyze all referenced files together. This is especially useful for comparing files, understanding relationships, or getting context across multiple files.
 
-**Source:** 
+**Source:** Example 2 - Successfully used `@LEARNING_PLAN.md @INDEX.md` together to compare and verify documentation structure 
 
 ---
 
 ### Q3: How much context is too much?
-**A:** 
+**A:** Start minimal, then add more if needed. Use targeted @-mentions (@Files for specific files, @Code for functions) rather than pasting entire files. Too much context can overwhelm and slow responses; too little gives generic answers. Rule of thumb: include only what's directly relevant to your question.
 
-**Source:** 
+**Source:** Topic 3 - Key Principles: Use @-mentions strategically, be specific about what you need 
+
+---
+
+## ✅ What Worked Well
+
+- **@-mentions work without autocomplete** — @Code found functions even when no suggestion appeared
+- **Multiple @-mentions in one prompt** — Allowed cross-referencing files to verify documentation structure
+- **@Docs found current info** — Got accurate Next.js 16 proxy.ts example from official docs
+- **Chat searches entire codebase** — Found 7 related files when asking about keyboard shortcuts
+
+___
+
+## 💡 Key Takeaways
+
+1. **@-mentions are your context superpower**
+   - Use @Files, @Folders, @Code, @Docs to give Chat precise context
+   - Combine multiple @-mentions for richer, comparative analysis
+
+2. **Good prompts = Context + Specific Question + Constraints**
+   - Bad: "fix this" → Good: "@file.js The function doesn't handle X. Can you fix it?"
+   - Include version numbers, file paths, expected output when relevant
+
+3. **Always verify AI responses**
+   - AI made mistakes even with documentation (@Web deprecation example)
+   - Check docs version/date, verify against changelogs, don't assume info is current
 
 ---
 
 ## 🔗 Resources
 
 ### Official Documentation
-- Cursor Chat Docs: 
+- Cursor Chat Docs: https://cursor.com/docs
 - 
 
 ### Community Resources
@@ -373,8 +362,8 @@ Important lesson: When I asked to check if @Web is available and provided Cursor
 
 ## 📦 Deliverables Created
 
-- [ ] List of effective prompts → Add to PROMPT_LIBRARY.md
-- [ ] @-mention usage patterns → Document for team
+- [x] List of effective prompts → `deliverables/phase-2-core-features/chat-prompt-library.md`
+- [x] @-mention usage patterns → `deliverables/phase-2-core-features/at-mention-usage-patterns.md`
 - [ ] Chat workflow examples → Share with team
 
 ---
@@ -384,8 +373,8 @@ Important lesson: When I asked to check if @Web is available and provided Cursor
 After completing this step:
 
 1. [ ] Practice Chat with real questions from your work
-2. [ ] Build a personal prompt library
-3. [ ] Share effective prompts with team
+2. [x] Build a personal prompt library → `deliverables/phase-2-core-features/chat-prompt-library.md`
+3. [x] Share effective prompts with team → `deliverables/phase-2-core-features/chat-prompt-library.md`
 4. [ ] Move to Step 2.2: Inline Editing (Cmd+K)
 
 ---
@@ -398,9 +387,9 @@ Rate your understanding (1-5 scale):
 - [ ] 2 - Basic understanding
 - [ ] 3 - Good understanding
 - [ ] 4 - Strong understanding
-- [ ] 5 - Expert level, can teach others
+- [x] 5 - Expert level, can teach others
 
-**Confidence Level:** ___/5
+**Confidence Level:** _5_/5
 
 **Notes on what to review:**
 - 
@@ -412,25 +401,23 @@ Rate your understanding (1-5 scale):
 [Your free-form notes about Chat, effective prompting, discoveries, etc.]
 
 
-
-
 ---
 
 ## 🔄 Review Checklist
 
 Before moving to the next step:
 
-- [ ] All learning objectives completed
-- [ ] Tried all @-mention types
-- [ ] Asked 10+ questions in Chat
-- [ ] Built personal prompt examples
-- [ ] Understand context management
-- [ ] Questions answered
-- [ ] Key takeaways summarized
+- [x] All learning objectives completed
+- [x] Tried all @-mention types
+- [x] Asked 10+ questions in Chat
+- [x] Built personal prompt examples
+- [x] Understand context management
+- [x] Questions answered
+- [x] Key takeaways summarized
 
 ---
 
 **Status:** 🟡 In Progress
 
-**Last Updated:** ____
+**Last Updated:** _26.12.25_
 
